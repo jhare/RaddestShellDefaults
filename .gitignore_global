@@ -1,0 +1,8 @@
+*.class
+Servers
+.metadata
+.project
+.classpath
+bin
+build
+.settings
