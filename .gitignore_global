@@ -6,3 +6,6 @@ Servers
 bin
 build
 .settings
+*.swp
+*.pyc
+*.o
