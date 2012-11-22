@@ -1,5 +1,8 @@
 " Joe Hare's default vim profile
 
+imap jj <Esc>
+vmap vv <Esc>
+
 " Disable compatibility with 
 set nocompatible
 
