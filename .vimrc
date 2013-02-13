@@ -14,6 +14,9 @@ set hidden
 
 set nobackup
 
+" Highlight search results
+set hlsearch
+
 " set up a longer history
 set history=1000
 set undolevels=1000
@@ -25,6 +28,10 @@ set noerrorbells
 " plugins under the ~/.vim/bundle directory
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
+
+" Always display file name
+set modeline
+set ls=2
 
 set filetype=on
 filetype plugin on
