@@ -17,6 +17,16 @@ set nobackup
 " Highlight search results
 set hlsearch
 
+" Disable the arrow keys like a baus.
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+map <up> <nop>
+map <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
+
 " set up a longer history
 set history=1000
 set undolevels=1000
