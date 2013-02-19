@@ -34,14 +34,12 @@ set title
 set visualbell
 set noerrorbells
 
-" Use pathogen to easily modify the runtime path to include all
-" plugins under the ~/.vim/bundle directory
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
-
 " Always display file name
 set modeline
 set ls=2
+
+" Turn off line wrapping
+set nowrap
 
 set filetype=on
 filetype plugin on
@@ -74,3 +72,9 @@ autocmd FileType css set textwidth=79
 autocmd FileType javascript set sw=4
 autocmd FileType javascript set ts=4
 autocmd FileType javascript set sts=4
+
+" Fire NERDTree automatically
+autocmd vimenter * NERDTree
+
+" Map NERDTree to Ctrl+n
+map <C-n> :NERDTreeToggle<CR>
