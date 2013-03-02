@@ -74,7 +74,7 @@ autocmd FileType javascript set ts=4
 autocmd FileType javascript set sts=4
 
 " Fire NERDTree automatically
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
 
 " Map NERDTree to Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
