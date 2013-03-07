@@ -17,7 +17,10 @@ set nobackup
 " Highlight search results
 set hlsearch
 
-" Make arrow keys resize the window 
+" Highlight text as you type in a search
+set incsearch
+
+" Disable the arrow keys like a baus.
 map <up> <C-W>+
 map <down> <C-W>-
 map <left> <C-W><
