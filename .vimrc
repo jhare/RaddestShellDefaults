@@ -17,7 +17,7 @@ set nobackup
 " Highlight search results
 set hlsearch
 
-" Disable the arrow keys like a baus.
+" Make arrow keys resize the window 
 map <up> <C-W>+
 map <down> <C-W>-
 map <left> <C-W><
