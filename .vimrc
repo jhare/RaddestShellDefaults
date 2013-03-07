@@ -18,14 +18,10 @@ set nobackup
 set hlsearch
 
 " Disable the arrow keys like a baus.
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-map <up> <nop>
-map <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
+map <up> <C-W>+
+map <down> <C-W>-
+map <left> <C-W><
+map <right> <C-W>>
 
 " set up a longer history
 set history=1000
