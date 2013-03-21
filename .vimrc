@@ -77,3 +77,7 @@ autocmd FileType javascript set sts=4
 
 " Map NERDTree to Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
+
+
+:nnoremap s :exec "normal i".nr2char(getchar())."\e"<CR>
+:nnoremap S :exec "normal a".nr2char(getchar())."\e"<CR>
