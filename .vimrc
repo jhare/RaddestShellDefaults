@@ -68,9 +68,9 @@ autocmd FileType css set ts=2
 autocmd FileType css set sts=2
 autocmd FileType css set textwidth=79
 " JavaScript (tab width 4 chr, wrap at 79th)
-autocmd FileType javascript set sw=4
-autocmd FileType javascript set ts=4
-autocmd FileType javascript set sts=4
+autocmd FileType javascript set sw=2
+autocmd FileType javascript set ts=2
+autocmd FileType javascript set sts=2
 
 " Fire NERDTree automatically
 " autocmd vimenter * NERDTree
