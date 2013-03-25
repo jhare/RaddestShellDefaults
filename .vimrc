@@ -51,6 +51,14 @@ set et
 set sw=4
 set textwidth=160
 
+set fillchars=stl:-,stlnc:-,vert:│
+
+hi VertSplit guifg=white guibg=black
+hi VertSplit ctermfg=black ctermbg=white
+
+" Have a more subtle column highlighting
+hi ColorColumn ctermbg=lightred guibg=lightred
+
 " Filetype specific overrides
 " HTML (tab width 2 chr, no wrapping)
 autocmd FileType html set sw=2
@@ -62,15 +70,26 @@ autocmd FileType python set sw=4
 autocmd FileType python set ts=4
 autocmd FileType python set sts=4
 autocmd FileType python set textwidth=79
+autocmd FileType python set colorcolumn=80
 " CSS (tab width 2 chr, wrap at 79th char)
 autocmd FileType css set sw=2
 autocmd FileType css set ts=2
 autocmd FileType css set sts=2
 autocmd FileType css set textwidth=79
+autocmd FileType css set colorcolumn=80
 " JavaScript (tab width 4 chr, wrap at 79th)
 autocmd FileType javascript set sw=2
 autocmd FileType javascript set ts=2
 autocmd FileType javascript set sts=2
+autocmd FileType javascript set textwidth=79
+autocmd FileType javascript set colorcolumn=80
+
+" PHP settings, getting brave here
+autocmd FileType php set sw=4
+autocmd FileType php set ts=4
+autocmd FileType php set sts=4
+autocmd FileType php set textwidth=79
+autocmd FileType php set colorcolumn=80
 
 " Fire NERDTree automatically
 " autocmd vimenter * NERDTree
