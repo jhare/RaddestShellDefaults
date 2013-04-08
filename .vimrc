@@ -44,6 +44,11 @@ set filetype=on
 filetype plugin on
 filetype indent on
 
+" Enable syntax and use wombat for it by default
+syntax enable 
+colo wombat
+
+" Default spacings
 set ai
 set ts=4
 set sts=4
@@ -83,6 +88,7 @@ autocmd FileType javascript set ts=2
 autocmd FileType javascript set sts=2
 autocmd FileType javascript set textwidth=79
 autocmd FileType javascript set colorcolumn=80
+autocmd FileType javascript colo vividchalk
 
 " PHP settings, getting brave here
 autocmd FileType php set sw=4
@@ -90,6 +96,12 @@ autocmd FileType php set ts=4
 autocmd FileType php set sts=4
 autocmd FileType php set textwidth=79
 autocmd FileType php set colorcolumn=80
+
+
+autocmd FileType sql set sw=2
+autocmd FileType sql set ts=2
+autocmd FileType sql set sts=2
+autocmd FileType sql set textwidth=79
 
 " Fire NERDTree automatically
 " autocmd vimenter * NERDTree
