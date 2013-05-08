@@ -119,3 +119,8 @@ map <C-n> :NERDTreeToggle<CR>
 
 " xdebug settings
 :map <Leader>b :Bp<cr> " Map ,b to toggle breakpoint
+
+
+"selection shortcuts
+:map <leader>a 1GvGG$ " select whole file in visual mode
+:map <leader>f 1GvGG$= " select whole file in visual, correct whitespace
