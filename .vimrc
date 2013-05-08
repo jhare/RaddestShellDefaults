@@ -3,6 +3,9 @@
 imap jj <Esc>
 vmap vv <Esc>
 
+"Set the leader key to baus status
+let mapleader=","
+
 " Disable compatibility with 
 set nocompatible
 
@@ -50,11 +53,12 @@ colo wombat
 
 " Default spacings
 set ai
-set ts=4
-set sts=4
+set ts=2
+set sts=2
 set et
-set sw=4
-set textwidth=160
+set sw=2
+set textwidth=80
+set colorcolumn=80
 
 set fillchars=stl:-,stlnc:-,vert:│
 
@@ -112,3 +116,6 @@ map <C-n> :NERDTreeToggle<CR>
 
 :nnoremap s :exec "normal i".nr2char(getchar())."\e"<CR>
 :nnoremap S :exec "normal a".nr2char(getchar())."\e"<CR>
+
+" xdebug settings
+:map <Leader>b :Bp<cr> " Map ,b to toggle breakpoint
