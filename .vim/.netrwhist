@@ -1,9 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/srv/shopon/src/templates/views/landing'
-let g:netrw_dirhist_2='/srv/shopon/src/templates/views/landing/step/thankyou'
-let g:netrw_dirhist_3='/srv/shopon/src/templates/views/admin/extensions'
-let g:netrw_dirhist_4='/srv/shopon/src/public/static/admin/js'
-let g:netrw_dirhist_5='/srv/shopon/src/templates/views/admin/marketing'
-let g:netrw_dirhist_6='/srv/shopon/src/templates/views/admin/extensions'
-let g:netrw_dirhist_7='/srv/shopon/src/templates/views/admin/dashboard'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/home/jhare/git/nodeexample'
