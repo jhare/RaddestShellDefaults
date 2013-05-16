@@ -1,0 +1,569 @@
+{
+   "activeHoursQueued": {
+      "message": "Etkin saatlerin ayarland\u0131. \n\n\u00D6NEML\u0130: Bu de\u011Fi\u015Fiklikler yar\u0131n bu saate kadar (\u015Fu andan itibaren 24 saat) ge\u00E7erli olmayacak."
+   },
+   "activeHoursSet": {
+      "message": "Etkin saatlerin ayarland\u0131."
+   },
+   "activeOverMidnight": {
+      "description": "When fully parsed, the message will read something like: 'StayFocusd will be active between 7:00 PM and midnight, and then between midnight at 6:00 AM. Are you sure that's what you meant to do?'",
+      "message": "$extensionName$, $startTime$ ile gece yar\u0131s\u0131 ve ard\u0131ndan, gece yar\u0131s\u0131 ile $endTime$ aras\u0131nda etkin olacak.\n\nBunu istedi\u011Finden emin misin?",
+      "placeholders": {
+         "endTime": {
+            "content": "$2",
+            "example": "7:00 PM"
+         },
+         "extensionName": {
+            "content": "StayFocusd"
+         },
+         "startTime": {
+            "content": "$1",
+            "example": "9:00 AM"
+         }
+      }
+   },
+   "activityMonitorOverlayBody": {
+      "description": "Displayed to user when they have been inactive for 5 minutes.",
+      "message": "Bir s\u00FCredir etkin de\u011Filsin. Bilgisayar ba\u015F\u0131nda de\u011Filken t\u00FCm s\u00FCrenin yanmamas\u0131 i\u00E7in $extensionName$ geri say\u0131m\u0131n\u0131 durdurduk.",
+      "placeholders": {
+         "extensionName": {
+            "content": "StayFocusd"
+         }
+      }
+   },
+   "activityMonitorOverlayHeader": {
+      "description": "Displayed to user when they have been inactive for 5 minutes.",
+      "message": "Merhaba, h\u00E2l\u00E2 orada m\u0131s\u0131n?"
+   },
+   "activityMonitorOverlayLink1": {
+      "description": "Segment of full string: 'Press any key or click here to continue.'",
+      "message": "Herhangi bir tu\u015Fa bas veya"
+   },
+   "activityMonitorOverlayLink2": {
+      "description": "Segment of full string: 'Press any key or click here to continue.'",
+      "message": "buray\u0131 t\u0131kla"
+   },
+   "activityMonitorOverlayLink3": {
+      "description": "Segment of full string: 'Press any key or click here to continue.'",
+      "message": "devam etmek i\u00E7in"
+   },
+   "activityMonitorOverlayLink4": {
+      "description": "User clicks link to remove an overlay that has been blocking the web page from their view",
+      "message": "Siteye eri\u015Fmek i\u00E7in t\u0131kla"
+   },
+   "addSiteToBlockedSitesList": {
+      "message": "$siteName$ sitesini Engellenen Siteler listesine ekle",
+      "placeholders": {
+         "siteName": {
+            "content": "$1",
+            "example": "YouTube.com"
+         }
+      }
+   },
+   "addToList": {
+      "description": "Add to list",
+      "message": "Ekle"
+   },
+   "advancedOptions": {
+      "message": "Geli\u015Fmi\u015F se\u00E7enekler"
+   },
+   "allSitesBlockedImmediately": {
+      "message": "Girdi\u011Fin s\u00FCre, bug\u00FCn i\u00E7in kalan s\u00FCrenden daha az. Bu, Engellenen Siteler listendeki t\u00FCm sitelerin hemen engellenece\u011Fi anlam\u0131na gelir.\n\nBunu yapmak istedi\u011Finden emin misin?"
+   },
+   "allow": {
+      "description": "Allow access",
+      "message": "\u0130zin Ver"
+   },
+   "allowCustomURL": {
+      "message": "\u00D6zel bir URL'ye izin ver"
+   },
+   "april": {
+      "message": "Nisan"
+   },
+   "areYouSure": {
+      "description": "Are you sure you want to confirm these settings?",
+      "message": "Bunu yapmak istedi\u011Finden emin misin?"
+   },
+   "atTime": {
+      "description": "At a specific time, i.e. at 1:00 PM",
+      "message": "saat:"
+   },
+   "august": {
+      "message": "A\u011Fustos"
+   },
+   "block": {
+      "description": "Disallow access",
+      "message": "Engelle"
+   },
+   "blockAllowMultipleSites": {
+      "message": "Ayn\u0131 anda birden \u00E7ok siteyi engellemek veya birden \u00E7ok siteye izin vermek mi istiyorsun?"
+   },
+   "blockCustomURL": {
+      "message": "\u00D6zel bir URL'yi engelle"
+   },
+   "blockNotification": {
+      "description": "For example, 'StayFocusd will start blocking your Blocked Sites in 10 minutes'",
+      "message": "$extensionName$ uzant\u0131s\u0131n\u0131n Engellenen Sitelerini engellemesi i\u00E7in kalan s\u00FCre:",
+      "placeholders": {
+         "extensionName": {
+            "content": "StayFocusd"
+         }
+      }
+   },
+   "canOnlyImportExportedFile": {
+      "message": "Yaln\u0131zca \u00F6nceden Ayarlar\u0131 D\u0131\u015Fa Aktar \u00F6zelli\u011Fiyle $extensionName$ uzant\u0131s\u0131ndan d\u0131\u015Fa aktar\u0131lan bir ayar dosyas\u0131n\u0131 i\u00E7e aktarabilirsin.",
+      "placeholders": {
+         "extensionName": {
+            "content": "StayFocusd"
+         }
+      }
+   },
+   "cannotAddAllowedSitesDuringNuclearOption": {
+      "description": "In this context, the 'Nuclear Option' is an idiom meaning 'the most extreme option'.",
+      "message": "N\u00FCkleer Se\u00E7ene\u011Fi etkin durumdayken, \u0130zin Verilen Siteler listesine site ekleyemezsin."
+   },
+   "cannotAllowBlockedSiteOnceTimeIsUp": {
+      "message": "G\u00FCn i\u00E7in maksimum s\u00FCre a\u015F\u0131ld\u0131ktan sonra \u00F6nceden engellenen bir siteye izin veremezsin. L\u00FCtfen yar\u0131n tekrar dene."
+   },
+   "cannotAllowSitesUsingWildcardsOnceTimeIsUp": {
+      "message": "G\u00FCn i\u00E7in maksimum s\u00FCre a\u015F\u0131ld\u0131ktan sonra joker karakterler kullanarak hi\u00E7bir siteye izin veremezsin. L\u00FCtfen yar\u0131n tekrar dene."
+   },
+   "cannotBlockStayFocusd": {
+      "message": "Maalesef! $domain$ etki alan\u0131n\u0131 Engellenen Siteler listesine ekleyemezsin.",
+      "placeholders": {
+         "domain": {
+            "content": "stayfocusd.com"
+         }
+      }
+   },
+   "cannotChangeTimeOnceTimeIsUp": {
+      "message": "G\u00FCn i\u00E7in s\u00FCreni a\u015Ft\u0131\u011F\u0131nda \u0130zin Verilen Maksimum S\u00FCre ayar\u0131n\u0131 de\u011Fi\u015Ftiremezsin. L\u00FCtfen yar\u0131n tekrar dene."
+   },
+   "cannotChooseMoreLenientSetting": {
+      "description": "'while it is active' = 'while the Nuclear Option is active'",
+      "message": "Etkin durumdayken, N\u00FCkleer Se\u00E7ene\u011Fi i\u00E7in daha ho\u015Fg\u00F6r\u00FCl\u00FC bir ayar se\u00E7emezsin."
+   },
+   "cannotClearAllowedSitesDuringNuclearOption": {
+      "description": "In this context, the 'Nuclear Option' is an idiom meaning 'the most extreme option'.",
+      "message": "N\u00FCkleer Se\u00E7ene\u011Fi etkin durumdayken \u0130zin Verilen Siteler listesini temizleyemezsin."
+   },
+   "cannotClearBlockedSitesOnceTimeIsUp": {
+      "message": "G\u00FCn i\u00E7in maksimum s\u00FCre a\u015F\u0131ld\u0131ktan sonra Engellenen Siteler listesini temizleyemezsin. L\u00FCtfen yar\u0131n tekrar dene."
+   },
+   "cannotImportAfterTimeExpired": {
+      "message": "Bug\u00FCn i\u00E7in s\u00FCren doldu. G\u00FCnl\u00FCk S\u0131f\u0131rlama Saatin ge\u00E7inceye kadar ayarlar\u0131 i\u00E7e aktaramazs\u0131n."
+   },
+   "cannotRemoveBlockedSiteDuringNuclearOption": {
+      "description": "In this context, the 'Nuclear Option' is an idiom meaning 'the most extreme option'.",
+      "message": "N\u00FCkleer Se\u00E7ene\u011Fi etkin durumdayken Engellenen Siteleri kald\u0131ramazs\u0131n."
+   },
+   "cannotRemoveBlockedSites": {
+      "message": "Bug\u00FCn i\u00E7in s\u00FCren doldu. G\u00FCnl\u00FCk S\u0131f\u0131rlama Saatin ge\u00E7meden Engellenen Siteleri kald\u0131ramazs\u0131n. (Ancak, bu listeye ekleme yapabilirsin.)"
+   },
+   "cannotRemoveSiteOnceTimeIsUp": {
+      "message": "G\u00FCn i\u00E7in maksimum s\u00FCre a\u015F\u0131ld\u0131ktan sonra Engellenen Siteler listesindeki bir siteyi kald\u0131ramazs\u0131n. L\u00FCtfen yar\u0131n tekrar dene."
+   },
+   "cannotSetMoreThan1440Mins": {
+      "message": "\u0130zin Verilen Maksimum S\u00FCre i\u00E7in 1.440 dakikadan  (24 saat) daha uzun bir s\u00FCre belirleyemezsin."
+   },
+   "cannotSetTimeToZeroOrLess": {
+      "message": "\u0130zin Verilen Maksimum S\u00FCre'yi s\u0131f\u0131ra veya s\u0131f\u0131rdan k\u00FC\u00E7\u00FCk bir de\u011Fere ayarlayamazs\u0131n."
+   },
+   "challengeTextSet": {
+      "message": "Soru metnin ayarland\u0131."
+   },
+   "challengeTextTooShort": {
+      "message": "Maalesef, soru metninin en az varsay\u0131lan soru uzunlu\u011Funda ($minChars$ karakter) olmas\u0131 gerekir",
+      "placeholders": {
+         "minChars": {
+            "content": "$1",
+            "example": "450"
+         }
+      }
+   },
+   "clickHere": {
+      "message": "Buray\u0131 t\u0131kla"
+   },
+   "close": {
+      "description": "Clicked to close popup window",
+      "message": "kapat"
+   },
+   "commencingNuclearOption": {
+      "description": "This is meant to be humorous. The Nuclear Option is an extreme measure, so we're wishing them good luck in a humorous way.",
+      "message": "N\u00FCkleer Se\u00E7ene\u011Fi ba\u015Fl\u0131yor. Allah yard\u0131mc\u0131n olsun."
+   },
+   "completeChallengeBeforeIncreasingTime": {
+      "message": "Hooo! Sakin ol kovboy.\n\nSorunu hen\u00FCz tamamlamad\u0131n. S\u00FCreni uzatabilmek i\u00E7in \u00F6nce bunu yapman gerekiyor.\n\nEzici bir \u015Fekilde yenildi\u011Fini ve k\u00FC\u00E7\u00FCk d\u00FC\u015Ft\u00FC\u011F\u00FCn\u00FC kabul etmek i\u00E7in Tamam'\u0131 t\u0131kla."
+   },
+   "confirmRequireChallenge": {
+      "message": "Bir soruyu zorunlu k\u0131lmak istedi\u011Finden emin misin?"
+   },
+   "currentlyOn": {
+      "description": "Indicates the domain the user is currently on, i.e. You are currently on cnn.com",
+      "message": "\u015Eu anda bulundu\u011Fun sayfa:"
+   },
+   "dailyResetQueued": {
+      "message": "G\u00FCnl\u00FCk s\u0131f\u0131rlama saatin ayarland\u0131. \n\n\u00D6NEML\u0130: Bu de\u011Fi\u015Fiklik yar\u0131n bu saate kadar (\u015Fu andan itibaren 24 saat) ge\u00E7erli olmayacak."
+   },
+   "dailyResetSet": {
+      "message": "G\u00FCnl\u00FCk s\u0131f\u0131rlama saatin ayarland\u0131."
+   },
+   "december": {
+      "message": "Aral\u0131k"
+   },
+   "defaultChallengeText": {
+      "description": "The user must re-type this paragraph perfectly, letter for letter, with no mistakes before being allowed to change settings. Therefore, every character in this text must be one that the user can type on his keyboard. Please translate with that in mind.",
+      "message": "Ertelemeyi seven biri, \u00E7o\u011Funlukla g\u00F6revini k\u0131sa bir s\u00FCrede tamamlama yetene\u011Fiyle ilgili \u00F6nemli say\u0131labilecek bir iyimserlik ta\u015F\u0131r; bu iyimserli\u011Fe genellikle her \u015Feyin kontrol alt\u0131nda oldu\u011Funu telkin eden ifadeler e\u015Flik eder. (Dolay\u0131s\u0131yla, \u00E7al\u0131\u015Fmaya ba\u015Flamaya gerek yoktur.) Aldat\u0131c\u0131 bir g\u00FCvenlik hissiyle zaman ge\u00E7er. Bir noktada, hayali ba\u015Flama zaman\u0131 ge\u00E7er ve kullan\u0131c\u0131 aniden \u015Funu fark eder: \"Aman Tanr\u0131m! Kontrol\u00FC kaybettim! Yeterli zaman\u0131m kalmad\u0131\""
+   },
+   "desc": {
+      "message": "[The Washington Post ve U.S. News and World Reports, LifeHacker, Mashable, PCMag, CNET, ReadWriteWeb, Gizmodo, GigaOm, MaximumPC, The Huffington Post, MakeUseOf ve daha bir \u00E7ok yay\u0131nda g\u00F6r\u00FCld\u00FC\u011F\u00FC gibi!]\n \nBilgisayar\u0131n ba\u015F\u0131na oturup \u00FCretken olaca\u011F\u0131na s\u00F6z veriyorsun. Sonra bir bak\u0131yorsun, on iki saat ge\u00E7mi\u015F. E-postan\u0131z\u0131 kontrol ettin, Facebook durumunu g\u00FCncelledin, Twitter'daki pop\u00FCler konulara g\u00F6z att\u0131n, RSS \u00F6zet ak\u0131\u015Flar\u0131n\u0131 okudun, Wikipedia'da sevdi\u011Fin m\u00FCzik grubunu arad\u0131n, kendini Google'da \u00F6zel olarak arad\u0131n, eski sevgilini siber takibe ald\u0131n, lisede a\u015F\u0131k oldu\u011Fun herkesin Facebook foto\u011Fraflar\u0131na bakt\u0131n, Farmville'deki bitkilerini sulad\u0131n, \u00E7evrimi\u00E7i poker oynayarak bir haftal\u0131k paran\u0131 kaybettin. \n\nYapmad\u0131\u011F\u0131n tek \u015Fey \u00C7ALI\u015EMAK.\n\nStayFocusd, zaman kaybettiren web sitelerinde harcayabilece\u011Fin zaman\u0131 k\u0131s\u0131tlayarak \u00E7al\u0131\u015Fmaya odaklanmana yard\u0131mc\u0131 olan bir Google Chrome \u00FCretkenlik uzant\u0131s\u0131d\u0131r. Ay\u0131rd\u0131\u011F\u0131n s\u00FCreyi kulland\u0131ktan sonra, engelledi\u011Fin sitelere g\u00FCn\u00FCn geri kalan\u0131nda eri\u015Filmesini \u00F6nler.\n\nY\u00FCksek oranda yap\u0131land\u0131r\u0131labilen uzant\u0131, t\u00FCm siteleri, belirli alt etki alanlar\u0131n\u0131, belirli yollar\u0131, belirli sayfalar\u0131, hatta belirli sayfa i\u00E7i i\u00E7eri\u011Fi (videolar, oyunlar, resimler, formlar vb.) engellemene veya bunlara izin vermene olanak tan\u0131r.\n\nStayFocusd, Los Angeles'ta kurulu Web tasar\u0131m\u0131, PHP/MySQL programlamas\u0131 ve Flash geli\u015Ftirmesinde uzmanla\u015Fm\u0131\u015F bir reklam st\u00FCdyosu olan Transfusion Media'da (http://www.transfusionmedia.com) \u00E7al\u0131\u015Fan Warren Benedetto taraf\u0131ndan geli\u015Ftirilmi\u015Ftir.\n\nSorunlar\u0131n, sorular\u0131n ya da \u00F6nerilerin mi var? Ne kadar \u00E7ok be\u011Fendi\u011Fini mi s\u00F6ylemek istiyorsun? http://getsatisfaction.com/stayfocusd adresinde yay\u0131nlay\u0131n.\n\nYeni s\u00FCr\u00FCme ge\u00E7me ve d\u00FCzeltmelerle ilgili bilgi almak m\u0131 istiyorsun? http://twitter.com/stayfocusd adresinde @stayfocusd'u takip et\n\nEN SON S\u00DCR\u00DCM : 1.2.0.15\n- D\u00FCzeltildi: Yaln\u0131zca bug\u00FCn belirli bir saatte engelleme yapmak \u00FCzere ayarlanan N\u00FCkleer Se\u00E7ene\u011Fi, s\u00F6z konusu saatte siteleri engellemeye ba\u015Flam\u0131yor.\n- S\u00FCre dolduktan sonra \u0130zin Verilen Sitelere joker karakterler eklenemez. \u00D6nceden buna izin veriliyordu ve kullan\u0131c\u0131lar, s\u00FCreleri dolmas\u0131na ra\u011Fmen Engellenen Sitelere eri\u015Fmeye devam etmek i\u00E7in joker karakterleri kullanabiliyordu."
+   },
+   "done": {
+      "description": "Completed",
+      "message": "bitti"
+   },
+   "enterCustomURL": {
+      "message": "\u00D6zel bir URL gir"
+   },
+   "error": {
+      "description": "An error occurred when blocking a site",
+      "message": "hata"
+   },
+   "errorLoadingSuggestedSites": {
+      "message": "\u00D6nerilen siteler listesi y\u00FCklenirken hata olu\u015Ftu. L\u00FCtfen $supportEmail$ adresine e-posta g\u00F6nder ve bu hatay\u0131 al\u0131rsan bana bildir.",
+      "placeholders": {
+         "supportEmail": {
+            "content": "support@stayfocusd.com"
+         }
+      }
+   },
+   "february": {
+      "message": "\u015Eubat"
+   },
+   "for": {
+      "description": "For example, 'StayFocusd will block images _for_ all websites'",
+      "message": "\u015Funlar i\u00E7in:"
+   },
+   "forTime": {
+      "description": "For a period of time. For example, 'StayFocusd will block images _for_ 1 hour'",
+      "message": "s\u00FCre:"
+   },
+   "forms": {
+      "description": "Forms on a website, i.e. signup form",
+      "message": "formlar"
+   },
+   "givingLessTime": {
+      "description": "The user has made his settings more strict, so we want to congratulate him.",
+      "message": "Kendine DAHA AZ zaman m\u0131 veriyorsun?\n\n*takdir edici alk\u0131\u015F*\n\nTebrik ederim dostum."
+   },
+   "greaterThanZero": {
+      "message": "0'dan b\u00FCy\u00FCk olmal\u0131"
+   },
+   "helpFAQ": {
+      "description": "Links to page with help and frequently asked questions (FAQ)",
+      "message": "Yard\u0131m/SSS"
+   },
+   "hideForever": {
+      "description": "Don't show info bar ever again",
+      "message": "s\u00FCrekli gizle"
+   },
+   "hideOnce": {
+      "description": "Don't show info bar right now",
+      "message": "bir kez gizle"
+   },
+   "hourOrMore": {
+      "description": "One or more hours",
+      "message": "saat"
+   },
+   "images": {
+      "description": "Images on a website",
+      "message": "resimler"
+   },
+   "importEmailSupport": {
+      "message": "Bunu yapt\u0131ysan ve bu hatay\u0131 almaya devam ediyorsan, l\u00FCtfen $supportLink$ adresine e-posta g\u00F6nder ve i\u00E7e aktarmaya \u00E7al\u0131\u015Ft\u0131\u011F\u0131n ayar dosyas\u0131n\u0131 iletiye ekle.",
+      "placeholders": {
+         "supportLink": {
+            "content": "\u003Ca href=\"mailto:support@stayfocusd.com?subject=Error%20importing%20settings\"\u003Esupport@stayfocusd.com\u003C/a\u003E"
+         }
+      }
+   },
+   "inactive": {
+      "description": "Extension is not currently tracking time on blocked sites",
+      "message": "etkin de\u011Fil"
+   },
+   "infoBarBlockedByReferrer": {
+      "description": "A blocked site is a site the user has added to a list of time-wasting websites. Max Allowed Time is the maximum time they are allowed to spend on blocked sites.",
+      "message": "Bu sayfaya engellenen bir site arac\u0131l\u0131\u011F\u0131yla ula\u015Ft\u0131\u011F\u0131ndan, burada ge\u00E7irece\u011Fin s\u00FCre \u0130zin Verilen Maksimum S\u00FCrenden d\u00FC\u015F\u00FCl\u00FCyor."
+   },
+   "initActiveHoursMsg": {
+      "description": "When fully parsed, the message will read something like: 'Starting on April 15, 2012 at 7:56 PM, your Active Hours will be from 12:00 AM to 11:58 PM'",
+      "message": "$msgDate$ tarihi ve $msgTime$ saatinden itibaren, Etkin Saatlerin $startTime$ ile $endTime$ aras\u0131nda olacak",
+      "placeholders": {
+         "endTime": {
+            "content": "$4",
+            "example": "7:00 PM"
+         },
+         "msgDate": {
+            "content": "$1",
+            "example": "January 1, 2012"
+         },
+         "msgTime": {
+            "content": "$2",
+            "example": "11:00 AM"
+         },
+         "startTime": {
+            "content": "$3",
+            "example": "9:00 AM"
+         }
+      }
+   },
+   "initResetTimeMsg": {
+      "description": "When fully parsed, the message will read something like: 'Starting on April 15, 2012 at 7:56 PM, your Daily Reset Time will be 11:00 PM'",
+      "message": "$msgDate$ tarihi ve $msgTime$ saatinden itibaren, G\u00FCnl\u00FCk S\u0131f\u0131rlama Saatin $resetTime$ olacak",
+      "placeholders": {
+         "msgDate": {
+            "content": "$1",
+            "example": "January 1, 2012"
+         },
+         "msgTime": {
+            "content": "$2",
+            "example": "11:00 AM"
+         },
+         "resetTime": {
+            "content": "$3",
+            "example": "9:00 AM"
+         }
+      }
+   },
+   "january": {
+      "message": "Ocak"
+   },
+   "july": {
+      "message": "Temmuz"
+   },
+   "june": {
+      "message": "Haziran"
+   },
+   "lessThanThreeMins": {
+      "message": "Zaman\u0131n\u0131n dolmas\u0131na \u00FC\u00E7 dakikadan k\u0131sa bir s\u00FCre kald\u0131. Hile yapmaya \u00E7al\u0131\u015Fm\u0131yorsun, de\u011Fil mi?\n\nAyarlar\u0131n\u0131 yine de g\u00FCncellemek istiyorsan Tamam'\u0131 t\u0131kla."
+   },
+   "lessThanThreeMins2": {
+      "message": "Cidden, bu uzant\u0131n\u0131n t\u00FCm amac\u0131n\u0131n kendine fazladan zaman vermemeni sa\u011Flamak oldu\u011Funu art\u0131k anlaman gerekir.\n\nBunu yapmak istedi\u011Finden emin misin?"
+   },
+   "lessThanThreeMins3": {
+      "message": "Bak dostum, bu i\u015F y\u00FCr\u00FCm\u00FCyor. Bu ili\u015Fkiye sad\u0131k olmad\u0131\u011F\u0131n\u0131 d\u00FC\u015F\u00FCnmekten kendimi alam\u0131yorum.\n\nArkada\u015Fl\u0131\u011F\u0131m\u0131z\u0131, yaln\u0131zca Web'de birka\u00E7 dakika daha fazla gezinmek i\u00E7in riske atmak istedi\u011Finden ger\u00E7ekten emin misin?"
+   },
+   "lessThanThreeMins4": {
+      "message": "Tamam'\u0131 t\u0131klad\u0131\u011F\u0131na inanam\u0131yorum."
+   },
+   "lessThanThreeMins5": {
+      "message": "Bu y\u00FCzden g\u00FCzel \u015Feylerimiz olam\u0131yor."
+   },
+   "lessThanThreeMins6": {
+      "message": "Bunu ger\u00E7ekten yapacaks\u0131n, de\u011Fil mi?"
+   },
+   "lessThanThreeMins7": {
+      "message": "Hi\u00E7 utanm\u0131yor musun?"
+   },
+   "lessThanThreeMins8": {
+      "message": "Tamam ... Elimden geleni yapt\u0131m. Ancak, ayarlar\u0131n\u0131 de\u011Fi\u015Ftirmeden \u00F6nce, bilmen gereken bir \u015Fey var:\n\nTamam d\u00FC\u011Fmesini t\u0131klad\u0131\u011F\u0131nda belki, bir ihtimal k\u00FCresel bir termon\u00FCkleer sava\u015F ba\u015Flayabilir.\n\nAyr\u0131ca, bir kedi yavrusu elektrik ak\u0131m\u0131yla \u00F6ld\u00FCr\u00FClebilir.\n\nBunun bir garantisi yok, ama olabilir. Yaln\u0131zca bilmeni istedim.\n\nHadi devam et. T\u0131kla istersen."
+   },
+   "loading": {
+      "message": "y\u00FCkleniyor"
+   },
+   "logins": {
+      "description": "Website login forms",
+      "message": "giri\u015Fler"
+   },
+   "madeAMistake": {
+      "description": "This is shown when the user makes a mistake in a typing challenge that is meant to prevent them from cheating by changing their settings.",
+      "message": "Ah! Bir hata yapt\u0131n.\n\nGer\u00E7ekten bu ayarlar\u0131 de\u011Fi\u015Ftirmen gerekiyor mu, yoksa hile yapmaya m\u0131 \u00E7al\u0131\u015F\u0131yorsun? D\u00FCr\u00FCst ol.\n\nHer iki durumda da ba\u015Ftan ba\u015Flaman gerekecek."
+   },
+   "manifestBrowserActionDefaultTitle": {
+      "description": "Tooltip displayed when user hovers over extension icon. Tells them what they can do if they click the icon.",
+      "message": "Bu siteyi engelle veya izin ver"
+   },
+   "manifestDescription": {
+      "description": "Extension description in manifest.json",
+      "message": "$extensionName$, zaman kaybettiren web sitelerinde harcayabilece\u011Fin s\u00FCreyi s\u0131n\u0131rland\u0131rarak \u00FCretkenli\u011Fini art\u0131r\u0131r.",
+      "placeholders": {
+         "extensionName": {
+            "content": "StayFocusd"
+         }
+      }
+   },
+   "march": {
+      "message": "Mart"
+   },
+   "maxTimeHasBeenExceeded": {
+      "description": "Segment of string like, 'Your Max Time Allowed for today has already been exceeded, so the Nuclear Option will go into effect immediately.'",
+      "message": "Bug\u00FCn i\u00E7in \u0130zin Verilen Maksimum S\u00FCreni zaten a\u015Ft\u0131n, bu y\u00FCzden"
+   },
+   "may": {
+      "message": "May\u0131s"
+   },
+   "maybeYouShouldReconsider": {
+      "message": "Kendine daha fazla zaman vermeye mi \u00E7al\u0131\u015F\u0131yorsun? Bunun iyi bir fikir oldu\u011Fundan emin misin? Bunu bir kez daha d\u00FC\u015F\u00FCnsen iyi olabilir.\n\n\u0130zin verilen maksimum s\u00FCreyi art\u0131rmak istedi\u011Finden emin misin?"
+   },
+   "meow": {
+      "description": "The user just clicked a button that warned him that clicking it would electrocute a kitten.",
+      "message": "M\u0130YAAAAAVVVVVV!\n\nUmar\u0131m mutlusundur."
+   },
+   "multimedia": {
+      "description": "Videos, games, music, etc.",
+      "message": "multimedya"
+   },
+   "mustSelectSettingsFile": {
+      "message": "\u0130\u00E7e aktarmak \u00FCzere bir ayar dosyas\u0131 se\u00E7melisin. Bir dosya se\u00E7mek i\u00E7in Dosya Se\u00E7'i t\u0131kla."
+   },
+   "noSitesYet": {
+      "description": "No sites are on the list yet",
+      "message": "Hen\u00FCz hi\u00E7 site yok"
+   },
+   "notEnoughVariation": {
+      "description": "This is shown when the user tries to set a custom typing challenge that is too easy, like a repeating sequence of the same character(s).",
+      "message": "H\u0131mmm. Soru metninde \u015F\u00FCpheli bir \u015Fekilde k\u00FC\u00E7\u00FCk bir karakter farkl\u0131l\u0131\u011F\u0131 var. Daha zorlay\u0131c\u0131 bir \u015Fey kullanmal\u0131s\u0131n."
+   },
+   "notificationSettingsSaved": {
+      "message": "Bildirim ayarlar\u0131n kaydedildi."
+   },
+   "november": {
+      "message": "Kas\u0131m"
+   },
+   "nuclear": {
+      "description": "Nuclear Option is currently active",
+      "message": "n\u00FCkleer"
+   },
+   "nuclearNotification": {
+      "description": "For example, 'StayFocusd's Nuclear Option will start blocking sites in 10 minutes'",
+      "message": "$extensionName$ N\u00FCkleer Se\u00E7ene\u011Finin siteleri engellemeye ba\u015Flamas\u0131 i\u00E7in kalan s\u00FCre:",
+      "placeholders": {
+         "extensionName": {
+            "content": "StayFocusd's"
+         }
+      }
+   },
+   "nuclearOption": {
+      "description": "Links to settings for Nuclear Option",
+      "message": "N\u00FCkleer Se\u00E7ene\u011Finin"
+   },
+   "nuclearOptionActiveUntil": {
+      "description": "Active until a certain time, i.e. active until 1:00 PM",
+      "message": "N\u00FCkleer Se\u00E7ene\u011Fi'nin etkin kalma s\u00FCresi:"
+   },
+   "nuclearOptionImmediately": {
+      "description": "In this context, the 'Nuclear Option' is an idiom meaning 'the most extreme option'.",
+      "message": "N\u00FCkleer Se\u00E7ene\u011Fi hemen y\u00FCr\u00FCrl\u00FC\u011Fe girecek."
+   },
+   "numberOfKeysDoesNotMatch": {
+      "description": "This is shown when the user tries to cheat, bypassing a typing challenge by cutting-and-pasting text into it. Don't translate 'Pretty sneak, sis' -- it probably won't make sense in non-English contexts",
+      "message": "Maalesef, bast\u0131\u011F\u0131n tu\u015F say\u0131s\u0131, metin kutusundaki karakter say\u0131s\u0131na uymuyor.\n\nKes yap\u0131\u015Ft\u0131r hilesi olabilir mi? \u00D6yleyse, \u00E7ok sinsice bir hareket.\n\nBa\u015Ftan ba\u015Flaman gerekiyor."
+   },
+   "october": {
+      "message": "Ekim"
+   },
+   "onMonday": {
+      "message": "Pazartesi"
+   },
+   "onlyAllowPagesOn": {
+      "description": "For example, 'Only allow pages on cnn.com'",
+      "message": "Yaln\u0131zca \u015Fu sitedeki sayfalara izin ver:"
+   },
+   "onlyBlockPagesOn": {
+      "description": "For example, 'Only block pages on cnn.com'",
+      "message": "Yaln\u0131zca \u015Fu sitedeki sayfalar\u0131 engelle:"
+   },
+   "onlyHurtingYourself": {
+      "message": "Cidden dostum. Bu uzant\u0131n\u0131n t\u00FCm amac\u0131 oyalanmana bir son vermek.\n\nB\u00F6yle yaparak yaln\u0131zca kendine zarar veriyorsun.\n\nTamam'\u0131 her t\u0131klad\u0131\u011F\u0131nda bir kedi yavrusuna elektrik ak\u0131m\u0131 veriliyor.\n\nBunu bilerek kendinle bar\u0131\u015F\u0131k ya\u015Fayabilece\u011Finden emin misin?"
+   },
+   "problemImportingSettings": {
+      "message": "Ayarlar\u0131n i\u00E7e aktar\u0131l\u0131rken bir sorun olu\u015Ftu."
+   },
+   "refreshToSeeImportedSettings": {
+      "message": "\u0130\u00E7e aktar\u0131lan t\u00FCm ayarlar\u0131n\u0131n g\u00F6r\u00FCn\u00FCr olmas\u0131 i\u00E7in bu sayfay\u0131 yenilemen gerekebilir."
+   },
+   "removeFromList": {
+      "description": "Remove from list",
+      "message": "Kald\u0131r"
+   },
+   "removeSiteFromAllowedSitesList": {
+      "message": "$siteName$ sitesini \u0130zin Verilen Siteler listesinden kald\u0131r",
+      "placeholders": {
+         "siteName": {
+            "content": "$1",
+            "example": "YouTube.com"
+         }
+      }
+   },
+   "removeSiteFromBlockedSitesList": {
+      "message": "$siteName$ sitesini Engellenen Siteler listesinden kald\u0131r",
+      "placeholders": {
+         "siteName": {
+            "content": "$1",
+            "example": "YouTube.com"
+         }
+      }
+   },
+   "rightNow": {
+      "description": "Immediately",
+      "message": "hemen \u015Fimdi"
+   },
+   "selectedTimeHasPassed": {
+      "description": "Segment of string like, 'Your selected time has already passed, so the Nuclear Option will go into effect immediately.'",
+      "message": "Se\u00E7ti\u011Fin zaman zaten ge\u00E7ti, bu y\u00FCzden"
+   },
+   "september": {
+      "message": "Eyl\u00FCl"
+   },
+   "settings": {
+      "message": "Ayarlar"
+   },
+   "settingsUpdated": {
+      "message": "Ayarlar\u0131n g\u00FCncellendi."
+   },
+   "startingTime": {
+      "description": "Starting at a time, i.e. 'Starting at 1:00 PM' or 'Starting right now'",
+      "message": "ba\u015Flang\u0131\u00E7:"
+   },
+   "stayFocusdWillBlock": {
+      "description": "Segment of full string: 'StayFocusd will block all sites' or 'StayFocusd will block multimedia and forms'",
+      "message": "$extensionName$ \u015Funlar\u0131 engelleyecek:",
+      "placeholders": {
+         "extensionName": {
+            "content": "StayFocusd"
+         }
+      }
+   },
+   "success": {
+      "description": "Site was successfully blocked",
+      "message": "ba\u015Far\u0131l\u0131"
+   },
+   "tellingYourMom": {
+      "message": "Annene s\u00F6yleyece\u011Fim."
+   },
+   "thisEntireSite": {
+      "message": "bu sitenin tamam\u0131"
+   },
+   "timeAM": {
+      "description": "Morning time, i.e. 10:00 AM",
+      "message": "AM"
+   },
+   "timeExpiredCannotChangeUntilTomorrow": {
+      "message": "Bug\u00FCn i\u00E7in zaman\u0131n doldu. Yar\u0131na kadar bu ayarlar\u0131 de\u011Fi\u015Ftiremezsin."
+   },
+   "timePM": {
+      "description": "Evening time, i.e. 10:00 PM",
+      "message": "PM"
+   },
+   "timeRemaining": {
+      "description": "The amount of time left before the clock runs out.",
+      "message": "KALAN S\u00DCRE"
+   },
+   "today": {
+      "message": "bug\u00FCn"
+   },
+   "whenMaxTimeExceeded": {
+      "description": "When I have used my allotted time",
+      "message": "\u0130zin Verilen Maksimum S\u00FCrem a\u015F\u0131ld\u0131\u011F\u0131nda"
+   }
+}

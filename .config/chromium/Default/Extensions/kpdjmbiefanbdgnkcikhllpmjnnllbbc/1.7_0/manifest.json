@@ -1,0 +1,22 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "icons/icon19.png"
+   },
+   "description": "Lets you download web pages as PDF in one click.",
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCvPOGhOoGoxz3dos1hYciuHPrfAfhqrfndEXc1whGxkB2nbYWytEAF9BXDN/fL4FQDcqkPpliROTUcfKmH/vV32un9PBxpzNSL/iU4ESB+pY3aZ6MYyy7WAON9za8Q9IAtl9A9V8wFoLG+VsTzLD3hlwnuGGRGnz1LR8ezIRzhZwIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "18",
+   "name": "Save as PDF",
+   "options_page": "options.html",
+   "permissions": [ "http://pdfcrowd.com/*", "tabs" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.7"
+}

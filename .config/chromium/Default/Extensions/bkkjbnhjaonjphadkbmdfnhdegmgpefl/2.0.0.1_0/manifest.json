@@ -1,0 +1,22 @@
+{
+   "background": {
+      "page": "offers_extension_bg.html"
+   },
+   "browser_action": {
+      "default_icon": "offers_small.png",
+      "default_popup": "offers_extension.html"
+   },
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "description": "Discover great Offers near you from anywhere on the web.",
+   "icons": {
+      "128": "offers_large.png",
+      "16": "offers_small.png",
+      "48": "offers_medium.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQD6A3Y50wc9bFtjCAzK71L0avZeYzSmHg653ooQqPKMwkC+IwCQzLli3JpvXKIQ05nNGtjseCrEyyWIA42Z3q5hpk4cghR3oYbz/mgypMmnQBaNN4Srnm7iSRKLTtqqGfc7C1XJ8r4pHHbpgiC70I7FLK1SnUSMkAsfj2yGaYY/4wIDAQAB",
+   "manifest_version": 2,
+   "name": "Google Offers",
+   "permissions": [ "tabs", "clipboardRead", "background", "notifications", "https://www.google.com/offers/*", "https://lh5.googleusercontent.com/public/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0.0.1"
+}

@@ -1,0 +1,18 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://chrome.wunderground.com/"
+      },
+      "urls": [ "http://chrome.wunderground.com/" ]
+   },
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "icons": {
+      "128": "128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDDlo9HCzrFr1PxfTHMIc713GQ3zGfpYWAtCgotawjoLnffKvow9pzX5VnfKWU5KgfYxr3eSiyybCqiTAS9U9LP6X408qmlmZLDJVNYTORF51R8qqlwHu0lBtUFJeWbu8VuRYuQAdmdPpODGHk8qsO8OKvQtTEyzG4RMwP0AHOiMwIDAQAB",
+   "name": "__MSG_appName__",
+   "permissions": [ "geolocation" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.6"
+}

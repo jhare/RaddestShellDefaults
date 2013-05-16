@@ -1,0 +1,23 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://chrome.supergiantgames.com/"
+      },
+      "urls": [ "http://chrome.supergiantgames.com/" ]
+   },
+   "description": "Bastion is an action RPG experience that redefines storytelling in games, with a reactive narrator who marks your every move.",
+   "icons": {
+      "128": "icon_128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDy6cGJEXzjuCtp8CppCUd8S1xpOj5ZDHG/KTokVkWV970sTqckKj+0z6DBdr3HZM+VRTxOmxjheXY7Ny2QqTO66O/Lk7txMTSk2U29UYbEp07M4YzWvAXNsdVgW1otr6uR+dsevkHIR8SWXKbn/l8d7QTnsGBhwKPj3wuF+yEXqwIDAQAB",
+   "minimum_chrome_version": "15",
+   "name": "Bastion",
+   "permissions": [ "unlimitedStorage" ],
+   "requirements": {
+      "3D": {
+         "features": [ "css3d", "webgl" ]
+      }
+   },
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "0.0.0.4"
+}

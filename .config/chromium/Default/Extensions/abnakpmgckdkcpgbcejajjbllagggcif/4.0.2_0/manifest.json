@@ -1,0 +1,34 @@
+{
+   "background": {
+      "scripts": [ "scripts/kindling.common.js", "scripts/kindling.background.js" ]
+   },
+   "content_scripts": [ {
+      "css": [ "css/content.css", "lib/coda-slider/coda-slider.css", "lib/at-who/jquery.atwho.css" ],
+      "js": [ "lib/jquery.min.js", "lib/jquery.easing.js", "lib/pubsub.min.js", "lib/highlight.min.js", "lib/coda-slider/jquery.coda-slider.js", "lib/at-who/jquery.atwho.min.js", "scripts/kindling.common.js", "scripts/kindling.theme.js", "scripts/kindling.emoji.js", "scripts/kindling.sounds.js", "scripts/kindling.highlight.js", "scripts/kindling.messagefilter.js", "scripts/kindling.avatars.js", "scripts/kindling.notificationpublisher.js", "scripts/kindling.contentscript.js", "scripts/kindling.minimalinterface.js", "scripts/kindling.expandabbreviations.js" ],
+      "matches": [ "*://*.campfirenow.com/room/*" ]
+   } ],
+   "default_locale": "en_US",
+   "description": "__MSG_description__",
+   "icons": {
+      "128": "img/icon128.png",
+      "16": "img/icon16.png",
+      "48": "img/icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDDN8TNy5yPv/IrlABsvUjA8zAfp0Yb6BRdm9uJJX905rLFpaRZy9Z66JGALVd8XoY4m9vo8jfkB9QlH8/XZ58/cZnoqS5X/84nR0p+TOjgYXc8v5Bowpje0AomnNQYKox2XH0rtDdi6ot4DnqyoZo1ODQyzIcMdpa4zlFlld2mzwIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "18",
+   "name": "Kindling for Campfire",
+   "options_page": "options.html",
+   "page_action": {
+      "default_icon": {
+         "19": "img/icon19.png",
+         "38": "img/icon38.png"
+      },
+      "default_popup": "options.html",
+      "default_title": "__MSG_iconTooltip__"
+   },
+   "permissions": [ "notifications", "tabs", "*://*.campfirenow.com/room/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "4.0.2",
+   "web_accessible_resources": [ "img/campfire46.png", "img/avatar.gif", "img/emoji.png", "img/sound.png", "img/symbols.png", "img/nature.png", "img/objects.png", "img/places.png", "scripts/kindling.inject.js" ]
+}

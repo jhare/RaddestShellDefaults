@@ -1,0 +1,7 @@
+/**
+ * Functions for killing page elements in DOM
+ *
+ * @author              Warren Benedetto <warren@transfusionmedia.com>
+ * @since               March 20, 2010
+ * @version             1.1.0
+ */function SmartBomb_tick(){SmartBomb.bomb()}var SmartBomb=function(){return{timer:null,interval:.5,smartBomb:{},handleBackgroundScriptRequest:function(e,t){var n={};switch(e.message){case"smartBomb":SmartBomb.init(e.smartBomb)}return n},init:function(e){this.smartBomb=e,clearInterval(this.timer),this.timer=setInterval(SmartBomb_tick,this.interval*1e3)},bomb:function(){this.smartBomb.multimedia&&this.bombMultimedia(),this.smartBomb.images&&this.bombImages(),this.smartBomb.forms&&this.bombForms(),this.smartBomb.logins&&this.bombLogins()},bombMultimedia:function(){$("embed,object,applet,canvas,video,iframe").each(function(){SmartBomb.replace($(this))})},bombImages:function(){$("img").each(function(){SmartBomb.replace($(this))})},bombForms:function(){$("input,select,textarea").each(function(){SmartBomb.replace($(this))})},bombLogins:function(){$("input[type=password]").each(function(){SmartBomb.replace($(this))})},replace:function(e){if(e.attr("class")=="StayFocusd-smartBombed")return!1;var t=e.attr("width"),n=e.attr("height"),r=e.css("display");if(r=="none")return!1;var i='<div style="height:'+n+"px;width:"+t+"px;background:url("+chrome.extension.getURL("img/smartBombBG.png")+') #000" class="StayFocusd-smartBombed"></div>';e.replaceWith(i)}}}();

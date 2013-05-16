@@ -1,0 +1,569 @@
+{
+   "activeHoursQueued": {
+      "message": "Vos heures d'activit\u00E9 ont bien \u00E9t\u00E9 d\u00E9finies.\n\nIMPORTANT\u00A0: Ces modifications ne prendront effet que dans 24\u00A0heures."
+   },
+   "activeHoursSet": {
+      "message": "Vos heures d'activit\u00E9 ont bien \u00E9t\u00E9 d\u00E9finies."
+   },
+   "activeOverMidnight": {
+      "description": "When fully parsed, the message will read something like: 'StayFocusd will be active between 7:00 PM and midnight, and then between midnight at 6:00 AM. Are you sure that's what you meant to do?'",
+      "message": "$extensionName$ sera active entre $startTime$ et minuit, puis entre minuit et $endTime$.\n\nVoulez-vous vraiment continuer\u00A0?",
+      "placeholders": {
+         "endTime": {
+            "content": "$2",
+            "example": "7:00 PM"
+         },
+         "extensionName": {
+            "content": "StayFocusd"
+         },
+         "startTime": {
+            "content": "$1",
+            "example": "9:00 AM"
+         }
+      }
+   },
+   "activityMonitorOverlayBody": {
+      "description": "Displayed to user when they have been inactive for 5 minutes.",
+      "message": "Vous avez \u00E9t\u00E9 inactif pendant un certain temps. Nous avons interrompu le compte \u00E0 rebours de $extensionName$ pour vous \u00E9viter d'utiliser tout votre temps pendant que vous \u00EAtes absent.",
+      "placeholders": {
+         "extensionName": {
+            "content": "StayFocusd"
+         }
+      }
+   },
+   "activityMonitorOverlayHeader": {
+      "description": "Displayed to user when they have been inactive for 5 minutes.",
+      "message": "H\u00E9, vous \u00EAtes encore l\u00E0\u00A0?"
+   },
+   "activityMonitorOverlayLink1": {
+      "description": "Segment of full string: 'Press any key or click here to continue.'",
+      "message": "Appuyez sur n'importe quelle touche ou"
+   },
+   "activityMonitorOverlayLink2": {
+      "description": "Segment of full string: 'Press any key or click here to continue.'",
+      "message": "cliquez ici"
+   },
+   "activityMonitorOverlayLink3": {
+      "description": "Segment of full string: 'Press any key or click here to continue.'",
+      "message": "pour continuer."
+   },
+   "activityMonitorOverlayLink4": {
+      "description": "User clicks link to remove an overlay that has been blocking the web page from their view",
+      "message": "Cliquez ici pour acc\u00E9der au site."
+   },
+   "addSiteToBlockedSitesList": {
+      "message": "Ajouter $siteName$ \u00E0 la liste des sites bloqu\u00E9s",
+      "placeholders": {
+         "siteName": {
+            "content": "$1",
+            "example": "YouTube.com"
+         }
+      }
+   },
+   "addToList": {
+      "description": "Add to list",
+      "message": "Ajouter"
+   },
+   "advancedOptions": {
+      "message": "Options avanc\u00E9es"
+   },
+   "allSitesBlockedImmediately": {
+      "message": "Le temps que vous avez saisi est inf\u00E9rieur au temps qu'il vous reste pour la journ\u00E9e. Cela signifie que tous les sites qui figurent sur la liste des sites bloqu\u00E9s seront imm\u00E9diatement bloqu\u00E9s. \n\nVoulez-vous vraiment continuer\u00A0?"
+   },
+   "allow": {
+      "description": "Allow access",
+      "message": "Autoriser"
+   },
+   "allowCustomURL": {
+      "message": "Autoriser une URL personnalis\u00E9e"
+   },
+   "april": {
+      "message": "Avril"
+   },
+   "areYouSure": {
+      "description": "Are you sure you want to confirm these settings?",
+      "message": "Voulez-vous vraiment confirmer ces param\u00E8tres\u00A0?"
+   },
+   "atTime": {
+      "description": "At a specific time, i.e. at 1:00 PM",
+      "message": "\u00E0"
+   },
+   "august": {
+      "message": "Ao\u00FBt"
+   },
+   "block": {
+      "description": "Disallow access",
+      "message": "Bloquer"
+   },
+   "blockAllowMultipleSites": {
+      "message": "Vous voulez bloquer ou autoriser plusieurs sites \u00E0 la fois\u00A0?"
+   },
+   "blockCustomURL": {
+      "message": "Bloquer une URL personnalis\u00E9e"
+   },
+   "blockNotification": {
+      "description": "For example, 'StayFocusd will start blocking your Blocked Sites in 10 minutes'",
+      "message": "$extensionName$ va commencer \u00E0 bloquer les sites qui figurent sur votre liste des sites bloqu\u00E9s dans",
+      "placeholders": {
+         "extensionName": {
+            "content": "StayFocusd"
+         }
+      }
+   },
+   "canOnlyImportExportedFile": {
+      "message": "Vous ne pouvez importer qu'un fichier de param\u00E8tres pr\u00E9c\u00E9demment export\u00E9 depuis $extensionName$ via la fonctionnalit\u00E9 Exporter les param\u00E8tres.",
+      "placeholders": {
+         "extensionName": {
+            "content": "StayFocusd"
+         }
+      }
+   },
+   "cannotAddAllowedSitesDuringNuclearOption": {
+      "description": "In this context, the 'Nuclear Option' is an idiom meaning 'the most extreme option'.",
+      "message": "Vous ne pouvez pas ajouter de sites \u00E0 la liste des sites autoris\u00E9s lorsque l'option nucl\u00E9aire est activ\u00E9e."
+   },
+   "cannotAllowBlockedSiteOnceTimeIsUp": {
+      "message": "Vous ne pouvez pas autoriser un site d\u00E9j\u00E0 bloqu\u00E9 lorsque la dur\u00E9e maximale autoris\u00E9e pour la journ\u00E9e s'est \u00E9coul\u00E9e. Veuillez r\u00E9essayer demain."
+   },
+   "cannotAllowSitesUsingWildcardsOnceTimeIsUp": {
+      "message": "Vous ne pouvez pas autoriser de sites \u00E0 l'aide de caract\u00E8res g\u00E9n\u00E9riques une fois que la dur\u00E9e maximale autoris\u00E9e pour la journ\u00E9e s'est \u00E9coul\u00E9e. Veuillez r\u00E9essayer demain."
+   },
+   "cannotBlockStayFocusd": {
+      "message": "D\u00E9sol\u00E9\u00A0! Vous ne pouvez pas ajouter $domain$ \u00E0 la liste des sites bloqu\u00E9s.",
+      "placeholders": {
+         "domain": {
+            "content": "stayfocusd.com"
+         }
+      }
+   },
+   "cannotChangeTimeOnceTimeIsUp": {
+      "message": "Vous ne pouvez pas modifier la dur\u00E9e maximale autoris\u00E9e une fois que vous avez exc\u00E9d\u00E9 votre temps pour la journ\u00E9e. Veuillez r\u00E9essayer demain."
+   },
+   "cannotChooseMoreLenientSetting": {
+      "description": "'while it is active' = 'while the Nuclear Option is active'",
+      "message": "Vous ne pouvez pas s\u00E9lectionner un param\u00E8tre moins strict pour l'option nucl\u00E9aire lorsque celle-ci est activ\u00E9e."
+   },
+   "cannotClearAllowedSitesDuringNuclearOption": {
+      "description": "In this context, the 'Nuclear Option' is an idiom meaning 'the most extreme option'.",
+      "message": "Vous ne pouvez pas effacer la liste des sites autoris\u00E9s lorsque l'option nucl\u00E9aire est activ\u00E9e."
+   },
+   "cannotClearBlockedSitesOnceTimeIsUp": {
+      "message": "Vous ne pouvez pas effacer la liste des sites bloqu\u00E9s une fois que la dur\u00E9e maximale autoris\u00E9e pour la journ\u00E9e s'est \u00E9coul\u00E9e. Veuillez r\u00E9essayer demain."
+   },
+   "cannotImportAfterTimeExpired": {
+      "message": "Le temps allou\u00E9 pour la journ\u00E9e a expir\u00E9. Vous pourrez importer des param\u00E8tres une fois la r\u00E9initialisation quotidienne effectu\u00E9e."
+   },
+   "cannotRemoveBlockedSiteDuringNuclearOption": {
+      "description": "In this context, the 'Nuclear Option' is an idiom meaning 'the most extreme option'.",
+      "message": "Vous ne pouvez pas supprimer des sites bloqu\u00E9s tant que l'option nucl\u00E9aire est activ\u00E9e."
+   },
+   "cannotRemoveBlockedSites": {
+      "message": "Le temps allou\u00E9 pour la journ\u00E9e a expir\u00E9. Vous pourrez supprimer des sites bloqu\u00E9s une fois la r\u00E9initialisation quotidienne effectu\u00E9e. (Vous pouvez toutefois en ajouter.)"
+   },
+   "cannotRemoveSiteOnceTimeIsUp": {
+      "message": "Vous ne pouvez pas supprimer un site de la liste des sites bloqu\u00E9s une fois que la dur\u00E9e maximale autoris\u00E9e pour la journ\u00E9e s'est \u00E9coul\u00E9e. Veuillez r\u00E9essayer demain."
+   },
+   "cannotSetMoreThan1440Mins": {
+      "message": "Vous ne pouvez pas d\u00E9finir la dur\u00E9e maximale autoris\u00E9e \u00E0 plus de 1\u00A0440 minutes, soit 24\u00A0heures."
+   },
+   "cannotSetTimeToZeroOrLess": {
+      "message": "Vous ne pouvez pas d\u00E9finir la dur\u00E9e maximale autoris\u00E9e \u00E0 une valeur inf\u00E9rieure ou \u00E9gale \u00E0 0."
+   },
+   "challengeTextSet": {
+      "message": "Le texte de votre captcha a bien \u00E9t\u00E9 enregistr\u00E9."
+   },
+   "challengeTextTooShort": {
+      "message": "D\u00E9sol\u00E9, le texte de votre captcha doit \u00EAtre au moins aussi longtemps que celui du captcha par d\u00E9faut, soit $minChars$\u00A0caract\u00E8res minimum.",
+      "placeholders": {
+         "minChars": {
+            "content": "$1",
+            "example": "450"
+         }
+      }
+   },
+   "clickHere": {
+      "message": "Cliquez ici."
+   },
+   "close": {
+      "description": "Clicked to close popup window",
+      "message": "fermer"
+   },
+   "commencingNuclearOption": {
+      "description": "This is meant to be humorous. The Nuclear Option is an extreme measure, so we're wishing them good luck in a humorous way.",
+      "message": "Activation de l'option nucl\u00E9aire. Bonne chance\u00A0!"
+   },
+   "completeChallengeBeforeIncreasingTime": {
+      "message": "Ouah\u00A0! Minute, papillon.\n\nVous n'avez pas saisi les caract\u00E8res que vous voyez dans l'image captcha. Vous ne pouvez pas augmenter votre temps sans passer par cette \u00E9tape.\n\nCliquez sur \"OK\" pour vous avouer vaincu."
+   },
+   "confirmRequireChallenge": {
+      "message": "Voulez-vous vraiment exiger un captcha\u00A0?"
+   },
+   "currentlyOn": {
+      "description": "Indicates the domain the user is currently on, i.e. You are currently on cnn.com",
+      "message": "Vous consultez actuellement\u00A0:"
+   },
+   "dailyResetQueued": {
+      "message": "L'heure de r\u00E9initialisation quotidienne est d\u00E9sormais d\u00E9finie. \n\nIMPORTANT\u00A0: Cette modification ne prendra effet que dans 24\u00A0heures."
+   },
+   "dailyResetSet": {
+      "message": "L'heure de r\u00E9initialisation quotidienne a bien \u00E9t\u00E9 enregistr\u00E9e."
+   },
+   "december": {
+      "message": "D\u00E9cembre"
+   },
+   "defaultChallengeText": {
+      "description": "The user must re-type this paragraph perfectly, letter for letter, with no mistakes before being allowed to change settings. Therefore, every character in this text must be one that the user can type on his keyboard. Please translate with that in mind.",
+      "message": "Le procrastinateur est souvent remarquablement optimiste quant \u00E0 sa capacit\u00E9 \u00E0 accomplir une t\u00E2che dans un d\u00E9lai serr\u00E9 et rassure g\u00E9n\u00E9ralement son entourage en confirmant que tout est sous contr\u00F4le. (Par cons\u00E9quent, il n'est pas n\u00E9cessaire de s'y atteler de suite.) Berc\u00E9 par un faux sentiment de s\u00E9curit\u00E9, le temps passe. \u00C0 un certain moment, le procrastinateur se rend soudain compte qu'il ne lui reste pas assez de temps pour effectuer la t\u00E2che en question et qu'il ne contr\u00F4le plus la situation."
+   },
+   "desc": {
+      "message": "[Comme publi\u00E9 dans The\u00A0Washington\u00A0Post, U.S.\u00A0News\u00A0And\u00A0World\u00A0Reports, LifeHacker, Mashable, PCMag, CNET, ReadWriteWeb, Gizmodo, GigaOm, MaximumPC, The Huffington Post, MakeUseOf, et plus encore\u00A0!]\n \nVous vous installez devant votre ordinateur, et vous vous jurez que vous serez productif. Mais, sans vous en rendre compte, 12\u00A0heures se sont \u00E9coul\u00E9es. Vous avez v\u00E9rifi\u00E9 vos e-mails, mis \u00E0 jour votre statut sur Facebook, pris connaissance des derniers sujets tendance sur Twitter, lu vos flux RSS, consult\u00E9 Wikip\u00E9dia pour trouver des informations sur votre groupe pr\u00E9f\u00E9r\u00E9, effectu\u00E9 une recherche Google sur vous-m\u00EAme, espionn\u00E9 votre ex sur le Web, regard\u00E9 les photos de vos anciennes conqu\u00EAtes sur Facebook, arros\u00E9 vos plantes dans Farmville et perdu l'\u00E9quivalent d'une\u00A0semaine de salaire en jouant au poker en ligne. \n\nVous avez tout fait, sauf TRAVAILLER.\n\nStayFocusd est une extension pour Google\u00A0Chrome destin\u00E9e \u00E0 optimiser votre productivit\u00E9 et \u00E0 vous aider \u00E0 rester concentr\u00E9 en limitant le temps que vous passez sur des sites Web sans int\u00E9r\u00EAt. Une fois que la dur\u00E9e maximale que vous avez d\u00E9finie s'est \u00E9coul\u00E9e, les sites que vous avez bloqu\u00E9s seront inaccessibles pour le reste de la journ\u00E9e.\n\nHautement configurable, cette extension vous permet de bloquer ou d'autoriser des sites dans leur int\u00E9gralit\u00E9, ainsi que des sous-domaines, des chemins, des pages et du contenu ( vid\u00E9os, jeux, images, formulaires, etc.) sp\u00E9cifiques. \n\nExtension d\u00E9velopp\u00E9e par Warren\u00A0Benedetto de chez Transfusion\u00A0Media (http://www.transfusionmedia.com), un studio de cr\u00E9ation bas\u00E9 \u00E0 Los Angeles et sp\u00E9cialis\u00E9 dans la conception de sites Web, la programmation PHP/MySQL et le d\u00E9veloppement Flash.\n\nDes probl\u00E8mes\u00A0? Des questions\u00A0? Des suggestions\u00A0? Des louanges\u00A0\u00E0 n'en plus finir\u00A0? Publiez un message \u00E0 l'adresse http://getsatisfaction.com/stayfocusd.\n\nVous souhaitez \u00EAtre inform\u00E9 des mises \u00E0 jour et des corrections\u00A0? Suivez @stayfocusd sur http://twitter.com/stayfocusd.\n\nDERNI\u00C8RE VERSION\u00A0: 1.2.0.15\n- Corrig\u00E9\u00A0: l'option nucl\u00E9aire permettant de bloquer les sites \u00E0 une heure pr\u00E9cise de la journ\u00E9e ne se d\u00E9clenche pas \u00E0 l'heure d\u00E9finie.\n- Les caract\u00E8res g\u00E9n\u00E9riques ne peuvent plus \u00EAtre ajout\u00E9s aux sites autoris\u00E9s une fois la dur\u00E9e maximale \u00E9coul\u00E9e. Cela \u00E9tait auparavant possible, et les utilisateurs pouvaient alors utiliser des caract\u00E8res g\u00E9n\u00E9riques pour continuer d'acc\u00E9der aux sites bloqu\u00E9s, m\u00EAme lorsque le temps imparti \u00E9tait \u00E9coul\u00E9."
+   },
+   "done": {
+      "description": "Completed",
+      "message": "OK"
+   },
+   "enterCustomURL": {
+      "message": "Saisissez une URL personnalis\u00E9e."
+   },
+   "error": {
+      "description": "An error occurred when blocking a site",
+      "message": "Erreur."
+   },
+   "errorLoadingSuggestedSites": {
+      "message": "Erreur lors du chargement de la liste des sites sugg\u00E9r\u00E9s. Veuillez envoyer un e-mail \u00E0 $supportEmail$ pour nous indiquer si vous recevez ce message d'erreur.",
+      "placeholders": {
+         "supportEmail": {
+            "content": "support@stayfocusd.com"
+         }
+      }
+   },
+   "february": {
+      "message": "F\u00E9vrier"
+   },
+   "for": {
+      "description": "For example, 'StayFocusd will block images _for_ all websites'",
+      "message": "pour"
+   },
+   "forTime": {
+      "description": "For a period of time. For example, 'StayFocusd will block images _for_ 1 hour'",
+      "message": "pendant"
+   },
+   "forms": {
+      "description": "Forms on a website, i.e. signup form",
+      "message": "formulaires"
+   },
+   "givingLessTime": {
+      "description": "The user has made his settings more strict, so we want to congratulate him.",
+      "message": "Vous vous donnez MOINS de temps\u00A0?\n\n*applaudissements admiratifs*\n\nBien jou\u00E9, mon ami."
+   },
+   "greaterThanZero": {
+      "message": "La valeur doit \u00EAtre sup\u00E9rieure \u00E0 0."
+   },
+   "helpFAQ": {
+      "description": "Links to page with help and frequently asked questions (FAQ)",
+      "message": "Aide/FAQ"
+   },
+   "hideForever": {
+      "description": "Don't show info bar ever again",
+      "message": "masquer d\u00E9finitivement"
+   },
+   "hideOnce": {
+      "description": "Don't show info bar right now",
+      "message": "masquer une\u00A0fois"
+   },
+   "hourOrMore": {
+      "description": "One or more hours",
+      "message": "heure(s)"
+   },
+   "images": {
+      "description": "Images on a website",
+      "message": "images"
+   },
+   "importEmailSupport": {
+      "message": "Si vous avez proc\u00E9d\u00E9 ainsi, mais que vous recevez toujours ce message d'erreur, veuillez envoyer un e-mail \u00E0 $supportLink$ et joindre le fichier de param\u00E8tres que vous tentez d'importer.",
+      "placeholders": {
+         "supportLink": {
+            "content": "\u003Ca href=\"mailto:support@stayfocusd.com?subject=Error%20importing%20settings\"\u003Esupport@stayfocusd.com\u003C/a\u003E"
+         }
+      }
+   },
+   "inactive": {
+      "description": "Extension is not currently tracking time on blocked sites",
+      "message": "inactive"
+   },
+   "infoBarBlockedByReferrer": {
+      "description": "A blocked site is a site the user has added to a list of time-wasting websites. Max Allowed Time is the maximum time they are allowed to spend on blocked sites.",
+      "message": "Vous avez acc\u00E9d\u00E9 \u00E0 cette page via un site bloqu\u00E9. Par cons\u00E9quent, le temps que vous passez \u00E0 la consulter est d\u00E9duit de votre dur\u00E9e maximale autoris\u00E9e."
+   },
+   "initActiveHoursMsg": {
+      "description": "When fully parsed, the message will read something like: 'Starting on April 15, 2012 at 7:56 PM, your Active Hours will be from 12:00 AM to 11:58 PM'",
+      "message": "\u00C0 partir du $msgDate$ \u00E0 $msgTime$, vos heures d'activit\u00E9 seront de $startTime$ \u00E0 $endTime$.",
+      "placeholders": {
+         "endTime": {
+            "content": "$4",
+            "example": "7:00 PM"
+         },
+         "msgDate": {
+            "content": "$1",
+            "example": "January 1, 2012"
+         },
+         "msgTime": {
+            "content": "$2",
+            "example": "11:00 AM"
+         },
+         "startTime": {
+            "content": "$3",
+            "example": "9:00 AM"
+         }
+      }
+   },
+   "initResetTimeMsg": {
+      "description": "When fully parsed, the message will read something like: 'Starting on April 15, 2012 at 7:56 PM, your Daily Reset Time will be 11:00 PM'",
+      "message": "\u00C0 partir du $msgDate$ \u00E0 $msgTime$, la r\u00E9initialisation quotidienne s'effectuera \u00E0 $resetTime$.",
+      "placeholders": {
+         "msgDate": {
+            "content": "$1",
+            "example": "January 1, 2012"
+         },
+         "msgTime": {
+            "content": "$2",
+            "example": "11:00 AM"
+         },
+         "resetTime": {
+            "content": "$3",
+            "example": "9:00 AM"
+         }
+      }
+   },
+   "january": {
+      "message": "Janvier"
+   },
+   "july": {
+      "message": "Juillet"
+   },
+   "june": {
+      "message": "Juin"
+   },
+   "lessThanThreeMins": {
+      "message": "Il vous reste moins de trois\u00A0minutes avant que la dur\u00E9e maximale autoris\u00E9e n'expire. Vous n'\u00EAtes pas en train d'essayer de tricher, n'est-ce pas\u00A0?\n\nSi vous souhaitez toujours mettre \u00E0 jour vos param\u00E8tres, cliquez sur \"OK\"."
+   },
+   "lessThanThreeMins2": {
+      "message": "S\u00E9rieux, le but de cette extension est justement de ne pas se donner plus de temps.\n\nVoulez-vous vraiment continuer\u00A0?"
+   },
+   "lessThanThreeMins3": {
+      "message": "\u00C9coutez, \u00E7a ne marche pas. Je ne peux pas m'emp\u00EAcher de penser que je suis la seule personne impliqu\u00E9e dans cette relation.\n\nVoulez-vous vraiment risquer notre amiti\u00E9 pour quelques minutes de plus sur le Web\u00A0?"
+   },
+   "lessThanThreeMins4": {
+      "message": "Je ne peux pas croire que vous ayez cliqu\u00E9 sur \"OK\"."
+   },
+   "lessThanThreeMins5": {
+      "message": "C'est pourquoi nous ne pouvons pas avoir de belles choses."
+   },
+   "lessThanThreeMins6": {
+      "message": "Vous allez vraiment aller jusqu'au bout, n'est-ce pas\u00A0?"
+   },
+   "lessThanThreeMins7": {
+      "message": "Vous n'avez pas honte\u00A0?"
+   },
+   "lessThanThreeMins8": {
+      "message": "Bon\u2026 Au moins, j'aurais fait de mon mieux. Mais avant que vos param\u00E8tres ne soient modifi\u00E9s, il y a une chose que vous devez savoir\u00A0:\n\nIl est possible que le fait d'appuyer sur le bouton \"OK\" d\u00E9clenche une guerre thermonucl\u00E9aire.\n\nOu \u00E9lectrocute un chiot.\n\nIl n'existe aucune garantie, mais c'est possible. J'ai juste pens\u00E9 que vous devriez le savoir.\n\nAllez-y. Cliquez dessus."
+   },
+   "loading": {
+      "message": "chargement en cours\u2026"
+   },
+   "logins": {
+      "description": "Website login forms",
+      "message": "formulaires de connexion"
+   },
+   "madeAMistake": {
+      "description": "This is shown when the user makes a mistake in a typing challenge that is meant to prevent them from cheating by changing their settings.",
+      "message": "Oups\u00A0! Vous avez fait une erreur.\n\nAvez-vous vraiment besoin de modifier ces param\u00E8tres, ou essayez-vous de tricher\u00A0? Soyez honn\u00EAte.\n\nQu'elle que soit la r\u00E9ponse, vous devrez recommencer depuis le d\u00E9but."
+   },
+   "manifestBrowserActionDefaultTitle": {
+      "description": "Tooltip displayed when user hovers over extension icon. Tells them what they can do if they click the icon.",
+      "message": "Bloquer ou autoriser ce site"
+   },
+   "manifestDescription": {
+      "description": "Extension description in manifest.json",
+      "message": "$extensionName$ optimise votre productivit\u00E9 en limitant le temps que vous passez sur des sites Web sans int\u00E9r\u00EAt.",
+      "placeholders": {
+         "extensionName": {
+            "content": "StayFocusd"
+         }
+      }
+   },
+   "march": {
+      "message": "Mars"
+   },
+   "maxTimeHasBeenExceeded": {
+      "description": "Segment of string like, 'Your Max Time Allowed for today has already been exceeded, so the Nuclear Option will go into effect immediately.'",
+      "message": "La dur\u00E9e maximale autoris\u00E9e pour la journ\u00E9e s'est d\u00E9j\u00E0 \u00E9coul\u00E9e. Par cons\u00E9quent,"
+   },
+   "may": {
+      "message": "Mai"
+   },
+   "maybeYouShouldReconsider": {
+      "message": "Vous essayez de vous donner plus de temps\u00A0? \u00CAtes-vous s\u00FBr que c'est une bonne id\u00E9e\u00A0? Vous devriez peut-\u00EAtre y r\u00E9fl\u00E9chir.\n\nVoulez-vous vraiment augmenter la dur\u00E9e maximale autoris\u00E9e\u00A0?"
+   },
+   "meow": {
+      "description": "The user just clicked a button that warned him that clicking it would electrocute a kitten.",
+      "message": "MIIAAAAAAOOOUUU\u00A0!\n\nJ\u2019esp\u00E8re que vous \u00EAtes content."
+   },
+   "multimedia": {
+      "description": "Videos, games, music, etc.",
+      "message": "multim\u00E9dia"
+   },
+   "mustSelectSettingsFile": {
+      "message": "Vous devez s\u00E9lectionner un fichier de param\u00E8tres \u00E0 importer. Cliquez sur \"Choose File\" (S\u00E9lectionner un fichier) pour s\u00E9lectionner un fichier."
+   },
+   "noSitesYet": {
+      "description": "No sites are on the list yet",
+      "message": "Aucun site pour le moment"
+   },
+   "notEnoughVariation": {
+      "description": "This is shown when the user tries to set a custom typing challenge that is too easy, like a repeating sequence of the same character(s).",
+      "message": "Hmmm. Le texte de votre captcha ne comporte pas suffisamment de caract\u00E8res diff\u00E9rents. Vous devez utiliser quelque chose de plus difficile."
+   },
+   "notificationSettingsSaved": {
+      "message": "Vos param\u00E8tres de notification ont \u00E9t\u00E9 enregistr\u00E9s."
+   },
+   "november": {
+      "message": "Novembre"
+   },
+   "nuclear": {
+      "description": "Nuclear Option is currently active",
+      "message": "nucl\u00E9aire"
+   },
+   "nuclearNotification": {
+      "description": "For example, 'StayFocusd's Nuclear Option will start blocking sites in 10 minutes'",
+      "message": "L'option nucl\u00E9aire de $extensionName$ va commencer \u00E0 bloquer les sites non autoris\u00E9s dans",
+      "placeholders": {
+         "extensionName": {
+            "content": "StayFocusd's"
+         }
+      }
+   },
+   "nuclearOption": {
+      "description": "Links to settings for Nuclear Option",
+      "message": "L'option nucl\u00E9aire"
+   },
+   "nuclearOptionActiveUntil": {
+      "description": "Active until a certain time, i.e. active until 1:00 PM",
+      "message": "L'option nucl\u00E9aire est activ\u00E9e jusqu'\u00E0"
+   },
+   "nuclearOptionImmediately": {
+      "description": "In this context, the 'Nuclear Option' is an idiom meaning 'the most extreme option'.",
+      "message": "l'option nucl\u00E9aire va imm\u00E9diatement \u00EAtre activ\u00E9e."
+   },
+   "numberOfKeysDoesNotMatch": {
+      "description": "This is shown when the user tries to cheat, bypassing a typing challenge by cutting-and-pasting text into it. Don't translate 'Pretty sneak, sis' -- it probably won't make sense in non-English contexts",
+      "message": "Tiens donc\u00A0! Le nombre de touches sur lesquelles vous avez appuy\u00E9 ne correspond pas au nombre de caract\u00E8res saisis dans la zone de texte.\n\nUn copier-coller astucieux, peut-\u00EAtre\u00A0?\n\nVous allez devoir recommencer depuis le d\u00E9but."
+   },
+   "october": {
+      "message": "Octobre"
+   },
+   "onMonday": {
+      "message": "lundi"
+   },
+   "onlyAllowPagesOn": {
+      "description": "For example, 'Only allow pages on cnn.com'",
+      "message": "Autoriser uniquement les pages sur"
+   },
+   "onlyBlockPagesOn": {
+      "description": "For example, 'Only block pages on cnn.com'",
+      "message": "Bloquer uniquement les pages sur"
+   },
+   "onlyHurtingYourself": {
+      "message": "S\u00E9rieux\u00A0?! Le but de cette extension est justement de vous emp\u00EAcher de perdre votre temps.\n\nVous ne faites du mal qu'\u00E0 vous-m\u00EAme.\n\nEt au chaton qui re\u00E7oit une d\u00E9charge \u00E9lectrique \u00E0 chaque fois que vous cliquez sur \"OK\".\n\nPouvez-vous vraiment vous regarder dans la glace apr\u00E8s \u00E7a\u00A0?"
+   },
+   "problemImportingSettings": {
+      "message": "Un probl\u00E8me est survenu lors de l'importation de vos param\u00E8tres."
+   },
+   "refreshToSeeImportedSettings": {
+      "message": "Il est possible que vous deviez actualiser cette page pour afficher tous les param\u00E8tres import\u00E9s."
+   },
+   "removeFromList": {
+      "description": "Remove from list",
+      "message": "Supprimer"
+   },
+   "removeSiteFromAllowedSitesList": {
+      "message": "Supprimer $siteName$ de la liste des sites autoris\u00E9s",
+      "placeholders": {
+         "siteName": {
+            "content": "$1",
+            "example": "YouTube.com"
+         }
+      }
+   },
+   "removeSiteFromBlockedSitesList": {
+      "message": "Supprimer $siteName$ de la liste des sites bloqu\u00E9s",
+      "placeholders": {
+         "siteName": {
+            "content": "$1",
+            "example": "YouTube.com"
+         }
+      }
+   },
+   "rightNow": {
+      "description": "Immediately",
+      "message": "imm\u00E9diatement"
+   },
+   "selectedTimeHasPassed": {
+      "description": "Segment of string like, 'Your selected time has already passed, so the Nuclear Option will go into effect immediately.'",
+      "message": "La dur\u00E9e s\u00E9lectionn\u00E9e a d\u00E9j\u00E0 expir\u00E9, ainsi"
+   },
+   "september": {
+      "message": "Septembre"
+   },
+   "settings": {
+      "message": "Param\u00E8tres"
+   },
+   "settingsUpdated": {
+      "message": "Vos param\u00E8tres ont \u00E9t\u00E9 mis \u00E0 jour."
+   },
+   "startingTime": {
+      "description": "Starting at a time, i.e. 'Starting at 1:00 PM' or 'Starting right now'",
+      "message": "Commence"
+   },
+   "stayFocusdWillBlock": {
+      "description": "Segment of full string: 'StayFocusd will block all sites' or 'StayFocusd will block multimedia and forms'",
+      "message": "$extensionName$ va bloquer",
+      "placeholders": {
+         "extensionName": {
+            "content": "StayFocusd"
+         }
+      }
+   },
+   "success": {
+      "description": "Site was successfully blocked",
+      "message": "Op\u00E9ration r\u00E9ussie."
+   },
+   "tellingYourMom": {
+      "message": "Je vais le dire \u00E0 ta m\u00E8re."
+   },
+   "thisEntireSite": {
+      "message": "l\u2019int\u00E9gralit\u00E9 de ce site"
+   },
+   "timeAM": {
+      "description": "Morning time, i.e. 10:00 AM",
+      "message": "a.m."
+   },
+   "timeExpiredCannotChangeUntilTomorrow": {
+      "message": "Le temps allou\u00E9 pour la journ\u00E9e a expir\u00E9. Vous ne pourrez modifier ces param\u00E8tres que demain."
+   },
+   "timePM": {
+      "description": "Evening time, i.e. 10:00 PM",
+      "message": "p.m."
+   },
+   "timeRemaining": {
+      "description": "The amount of time left before the clock runs out.",
+      "message": "TEMPS RESTANT"
+   },
+   "today": {
+      "message": "aujourd\u2019hui"
+   },
+   "whenMaxTimeExceeded": {
+      "description": "When I have used my allotted time",
+      "message": "lorsque ma dur\u00E9e maximale autoris\u00E9e aura \u00E9t\u00E9 d\u00E9pass\u00E9e"
+   }
+}

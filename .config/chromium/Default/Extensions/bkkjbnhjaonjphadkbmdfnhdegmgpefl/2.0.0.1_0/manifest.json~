@@ -1,0 +1,25 @@
+{
+  "name": "Google Offers",
+  "version": "2.0.0.0",
+  "manifest_version": 2,
+  "description": "Discover great Offers near you from anywhere on the web.",
+  "icons": {
+    "16": "offers_small.png",
+    "48": "offers_medium.png",
+    "128": "offers_large.png"
+  },
+  "browser_action": {
+    "default_icon": "offers_small.png",
+    "default_popup": "offers_extension.html"
+  },
+  "background": { "page": "offers_extension_bg.html" },
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+  "permissions": [
+    "tabs",
+    "clipboardRead",
+    "background",
+    "notifications",
+    "https://www.google.com/offers/*",
+    "https://lh5.googleusercontent.com/public/*"
+  ]
+}

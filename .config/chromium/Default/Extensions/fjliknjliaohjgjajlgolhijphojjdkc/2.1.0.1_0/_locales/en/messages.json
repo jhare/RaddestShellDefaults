@@ -1,0 +1,10 @@
+{
+   "appDesc": {
+      "description": "The description of the application, displayed in the web store.",
+      "message": "Over 4 million people already use Wunderlist to manage tasks, to-do lists, and to get things done."
+   },
+   "appName": {
+      "description": "The title of the application, displayed in the web store.",
+      "message": "Wunderlist - To-do & Task List"
+   }
+}
