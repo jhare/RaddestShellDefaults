@@ -1,5 +1,7 @@
 " Joe Hare's default vim profile
+execute pathogen#infect()
 
+" Pop out of insert and visual modes easily
 imap jj <Esc>
 vmap vv <Esc>
 
@@ -43,13 +45,9 @@ set ls=2
 " Turn off line wrapping
 set nowrap
 
-set filetype=on
-filetype plugin on
-filetype indent on
-
-" Enable syntax and use wombat for it by default
-syntax enable 
-colo wombat
+" Enable syntax
+syntax on 
+filetype plugin indent on
 
 " Default spacings
 set ai
@@ -62,65 +60,20 @@ set colorcolumn=80
 
 set fillchars=stl:-,stlnc:-,vert:│
 
-hi VertSplit guifg=white guibg=black
-hi VertSplit ctermfg=black ctermbg=white
-
-" Have a more subtle column highlighting
-hi ColorColumn ctermbg=lightred guibg=lightred
-
-" Filetype specific overrides
-" HTML (tab width 2 chr, no wrapping)
-autocmd FileType html set sw=2
-autocmd FileType html set ts=2
-autocmd FileType html set sts=2
-autocmd FileType html set textwidth=0
-" Python (tab width 4 chr, wrap at 79th char)
-autocmd FileType python set sw=4
-autocmd FileType python set ts=4
-autocmd FileType python set sts=4
-autocmd FileType python set textwidth=79
-autocmd FileType python set colorcolumn=80
-" CSS (tab width 2 chr, wrap at 79th char)
-autocmd FileType css set sw=2
-autocmd FileType css set ts=2
-autocmd FileType css set sts=2
-autocmd FileType css set textwidth=79
-autocmd FileType css set colorcolumn=80
-" JavaScript (tab width 4 chr, wrap at 79th)
-autocmd FileType javascript set sw=2
-autocmd FileType javascript set ts=2
-autocmd FileType javascript set sts=2
-autocmd FileType javascript set textwidth=79
-autocmd FileType javascript set colorcolumn=80
-autocmd FileType javascript colo vividchalk
-
-" PHP settings, getting brave here
-autocmd FileType php set sw=4
-autocmd FileType php set ts=4
-autocmd FileType php set sts=4
-autocmd FileType php set textwidth=79
-autocmd FileType php set colorcolumn=80
-
-
-autocmd FileType sql set sw=2
-autocmd FileType sql set ts=2
-autocmd FileType sql set sts=2
-autocmd FileType sql set textwidth=79
-
-" Fire NERDTree automatically
-" autocmd vimenter * NERDTree
-
 " Map NERDTree to Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
+map <C-m> :NERDTreeMirror<CR>
 
+" Quick access to buffer search
+:map <leader>, :buffer<Space>
 
 :nnoremap s :exec "normal i".nr2char(getchar())."\e"<CR>
 :nnoremap S :exec "normal a".nr2char(getchar())."\e"<CR>
 
-" xdebug settings
-:map <Leader>b :Bp<cr> " Map ,b to toggle breakpoint
-
-
 "selection shortcuts
 :map <leader>a 1GvGG$ " select whole file in visual mode
 :map <leader>f 1GvGG$= " select whole file in visual, correct whitespace
+
+" Set color scheme
+colorscheme lucius
+LuciusBlackHighContrast
