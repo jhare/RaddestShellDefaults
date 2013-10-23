@@ -13,3 +13,9 @@
 [submodule ".vim/bundle/vim-lucius"]
 	path = .vim/bundle/vim-lucius
 	url = git@github.com:jonathanfilip/vim-lucius
+[submodule ".vim/bundle/vdebug"]
+	path = .vim/bundle/vdebug
+	url = git@github.com:joonty/vdebug
+[submodule ".vim/bundle/syntastic"]
+	path = .vim/bundle/syntastic
+	url = git@github.com:scrooloose/syntastic

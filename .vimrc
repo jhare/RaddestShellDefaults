@@ -77,3 +77,5 @@ map <C-m> :NERDTreeMirror<CR>
 " Set color scheme
 colorscheme lucius
 LuciusBlackHighContrast
+:map <leader>b :hi Normal ctermbg=None<CR>
+:map <leader>bb :LuciusBlackHighContrast<CR>
