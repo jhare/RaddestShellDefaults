@@ -146,17 +146,6 @@ PS4='+ '
 }
 proml
 
-
-
-# some ShopOn specific stuff
-export SHOPON=/srv/shopon
-export SMC=/srv/shopon/vendor/smc/smc
-export SHOPONSRC=$SHOPON/src
-export SMCSRC=$SMC/src
-export CONTROLLERS=/srv/shopon/src/shopon/controllers
-export MODELS=/srv/shopon/src/shopon/models
-export VIEWS=/srv/shopon/src/templates/views
-
 # Deal with history in multiple terminals
 # avoid duplicates..
 export HISTCONTROL=ignoredups:erasedups  
