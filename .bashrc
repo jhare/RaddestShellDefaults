@@ -146,13 +146,11 @@ PS4='+ '
 }
 proml
 
+# Deal with history in multiple terminals
+# avoid duplicates..
+export HISTCONTROL=ignoredups:erasedups  
+# append history entries..
+shopt -s histappend
 
-
-# some ShopOn specific stuff
-export SHOPON=/srv/shopon
-export SMC=/srv/shopon/vendor/smc/smc
-export SHOPONSRC=$SHOPON/src
-export SMCSRC=$SMC/src
-export CONTROLLERS=/srv/shopon/src/shopon/controllers
-export MODELS=/srv/shopon/src/shopon/models
-export VIEWS=/srv/shopon/src/templates/views
+# After each command, save and reload history
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
