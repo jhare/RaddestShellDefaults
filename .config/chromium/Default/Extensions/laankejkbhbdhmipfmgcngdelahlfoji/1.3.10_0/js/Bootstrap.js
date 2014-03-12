@@ -1,1 +1,0 @@
-StayFocusd.init(),ActivityMonitor.initBackgroundScript();

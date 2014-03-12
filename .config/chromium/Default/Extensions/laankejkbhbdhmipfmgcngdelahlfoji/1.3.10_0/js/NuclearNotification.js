@@ -1,1 +1,0 @@
-function bg(){return chrome.extension.getBackgroundPage()}$(document).ready(function(){bg().StayFocusd.localizeHTML(document);var e=bg().NuclearOption.getSecondsUntilActive();e>60?$("#timeRemaining").html(e/60+" minutes"):$("#timeRemaining").html(e+" seconds"),setTimeout(function(){window.close()},5e3)});
