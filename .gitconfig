@@ -1,17 +1,12 @@
-[user]
-	name = jhare
-	email = joseph.hare@gmail.com
-[core]
-    editor = vim
-
-[alias]
-	diffy = difftool -y
-[diff]
-    tool = default-difftool
-
-[difftool "default-difftool"]
-    cmd = meld $LOCAL $REMOTE
-    prompt = false
-
 [color]
-	ui = true
+	ui = auto
+[user]
+	email = joseph.hare@gmail.com
+    name = Joe Hare
+
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+[diftool]
+	prompt = false
