@@ -49,20 +49,29 @@ set nowrap
 syntax on 
 filetype plugin indent on
 
-" Default spacings
-set ai
-set ts=2
-set sts=2
-set et
-set sw=2
+" Wrapping and display lines
 set textwidth=80
 set colorcolumn=80
+
+set cindent
+
+" Insert tab characters represetned
+"set noexpandtab shiftwidth=4 tabstop=4
+
+" Insert 4 spaces when tab is pressed.
+set expandtab shiftwidth=4 tabstop=4
 
 set fillchars=stl:-,stlnc:-,vert:│
 
 " Map NERDTree to Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
 map <C-m> :NERDTreeMirror<CR>
+
+" Set up folding
+augroup vimrc
+  au BufReadPre * setlocal foldmethod=indent
+  au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
+augroup END
 
 " Quick access to buffer search
 :map <leader>, :buffer<Space>
@@ -79,3 +88,29 @@ colorscheme lucius
 LuciusBlackHighContrast
 :map <leader>b :hi Normal ctermbg=None<CR>
 :map <leader>bb :LuciusBlackHighContrast<CR>
+
+" Syntastic settings
+let g:syntastic_json_checkers = ['jsonlint']
+
+" Find .jshintrc for Syntastic
+function s:find_jshintrc(dir)
+    let l:found = globpath(a:dir, '.jshintrc')
+    if filereadable(l:found)
+        return l:found
+    endif
+
+    let l:parent = fnamemodify(a:dir, ':h')
+    if l:parent != a:dir
+        return s:find_jshintrc(l:parent)
+    endif
+
+    return "~/.jshintrc"
+endfunction
+
+function UpdateJsHintConf()
+    let l:dir = expand('%:p:h')
+    let l:jshintrc = s:find_jshintrc(l:dir)
+    let g:syntastic_javascript_jshint_conf = l:jshintrc
+endfunction
+
+au BufEnter * call UpdateJsHintConf()
