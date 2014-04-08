@@ -6,6 +6,7 @@ require("awful.rules")
 require("beautiful")
 -- Notification library
 require("naughty")
+require("vicious")
 
 -- Load Debian menu entries
 require("debian.menu")
@@ -37,7 +38,7 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
-beautiful.init("/home/jhare/.config/awesome/themes/wombat/theme.lua")
+beautiful.init("/home/jhare/.config/awesome/themes/snow-joe/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "terminator"
