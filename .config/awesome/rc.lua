@@ -169,6 +169,19 @@ for s = 1, screen.count() do
                                               return awful.widget.tasklist.label.currenttags(c, s)
                                           end, mytasklist.buttons)
 
+    -- Create an ACPI widget                                                        
+    batterywidget = widget({ type = "textbox" })                                    
+    batterywidget.text = " | Battery | "                                            
+    batterywidgettimer = timer({ timeout = 5 })                                     
+    batterywidgettimer:add_signal("timeout",                                        
+    function()                                                                    
+        fh = assert(io.popen("acpi | cut -d, -f 2,3 -", "r"))                       
+        batterywidget.text = " |" .. fh:read("*l") .. " | "                         
+        fh:close()                                                                  
+    end                                                                           
+    )                                                                               
+    batterywidgettimer:start()
+
     -- Create the wibox
     mywibox[s] = awful.wibox({ position = "top", screen = s })
     -- Add widgets to the wibox - order matters
@@ -180,6 +193,7 @@ for s = 1, screen.count() do
             layout = awful.widget.layout.horizontal.leftright
         },
         mylayoutbox[s],
+        batterywidget,
         mytextclock,
         s == 1 and mysystray or nil,
         mytasklist[s],
@@ -375,4 +389,8 @@ end)
 
 client.add_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.add_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
+
+os.execute("nm-applet&")
+
+
 -- }}}
