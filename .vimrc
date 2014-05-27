@@ -43,6 +43,10 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'trapd00r/neverland-vim-theme'
+NeoBundle 'elzr/vim-json'
+NeoBundle 'mileszs/ack.vim'
+NeoBundle 'terryma/vim-multiple-cursors'
+NeoBundle 'ervandew/supertab'
 
 " Required:
 call neobundle#end()
@@ -121,8 +125,8 @@ set noexpandtab shiftwidth=4 tabstop=4
 set fillchars=stl:-,stlnc:-,vert:│
 
 " Map NERDTree to Ctrl+n
-map <C-n> :NERDTreeToggle<CR>
-map <C-m> :NERDTreeMirror<CR>
+map <leader>n :NERDTreeToggle<CR>
+map <leader>m :NERDTreeMirror<CR>
 
 " Set up folding
 augroup vimrc
@@ -140,6 +144,7 @@ augroup END
 :map <leader>a 1GvGG$ " select whole file in visual mode
 :map <leader>f 1GvGG$= " select whole file in visual, correct whitespace
 
+:map <leader><space> @a
 " Set color scheme
 " colorscheme lucius
 colorscheme lucius
@@ -174,8 +179,8 @@ au BufEnter * call UpdateJsHintConf()
 
 " ------ Unite keybinding
 nnoremap <leader>/ :Unite file_rec/async<cr>
-nnoremap <space>/ :Unite grep.<cr>
-
+nnoremap <leader>f :Unite grep:.<cr>
+call unite#custom#source('file,file/new,buffer,file_rec','matchers', 'matcher_fuzzy')
 
 " ------ Neocomplete configuration
 "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
