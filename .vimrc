@@ -47,6 +47,8 @@ NeoBundle 'elzr/vim-json'
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'ervandew/supertab'
+NeoBundle 'rking/ag.vim'
+NeoBundle 'maksimr/vim-jsbeautify'
 
 " Required:
 call neobundle#end()
@@ -137,12 +139,13 @@ augroup END
 " Quick access to buffer search
 :map <leader>, :buffer<Space>
 
-:nnoremap s :exec "normal i".nr2char(getchar())."\e"<CR>
-:nnoremap S :exec "normal a".nr2char(getchar())."\e"<CR>
+":nnoremap s :exec "normal i".nr2char(getchar())."\e"<CR>
+":nnoremap S :exec "normal a".nr2char(getchar())."\e"<CR>
 
 "selection shortcuts
 :map <leader>a 1GvGG$ " select whole file in visual mode
-:map <leader>f 1GvGG$= " select whole file in visual, correct whitespace
+" Replaced with jsbeautify
+":map <leader>f 1GvGG$= " select whole file in visual, correct whitespace
 
 :map <leader><space> @a
 " Set color scheme
@@ -266,3 +269,14 @@ endif
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+
+" JSBeautify goodness
+map <leader>f :call JsBeautify()<cr>
+autocmd FileType javascript noremap <buffer>  <leader>f :call JsBeautify()<cr>
+autocmd FileType html noremap <buffer> <leader>f :call HtmlBeautify()<cr>
+autocmd FileType css noremap <buffer> <leader>f :call CSSBeautify()<cr>
+
+map <leader>F :call RangeJsBeautify()<cr>
+autocmd FileType javascript noremap <buffer>  <leader>F :call RangeJsBeautify()<cr>
+autocmd FileType html noremap <buffer> <leader>F :call RangeHtmlBeautify()<cr>
+autocmd FileType css noremap <buffer> <leader>F :call RangeCSSBeautify()<cr>
