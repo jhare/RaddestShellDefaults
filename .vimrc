@@ -49,6 +49,8 @@ NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'maksimr/vim-jsbeautify'
+NeoBundle 'wavded/vim-stylus'
+NeoBundle 'kchmck/vim-coffee-script'
 
 " Required:
 call neobundle#end()
@@ -116,10 +118,10 @@ set colorcolumn=80
 set cindent
 
 " Insert tab characters represetned (others)
-set noexpandtab shiftwidth=4 tabstop=4
+"set noexpandtab shiftwidth=4 tabstop=4
 
 " Insert 4 spaces when tab is pressed. (Telogical)
-" set expandtab shiftwidth=4 tabstop=4
+set expandtab shiftwidth=4 tabstop=4
 
 " Insert 4 spaces when tab is pressed. (Node/NPM)
 "set expandtab shiftwidth=2 tabstop=2
@@ -280,3 +282,10 @@ map <leader>F :call RangeJsBeautify()<cr>
 autocmd FileType javascript noremap <buffer>  <leader>F :call RangeJsBeautify()<cr>
 autocmd FileType html noremap <buffer> <leader>F :call RangeHtmlBeautify()<cr>
 autocmd FileType css noremap <buffer> <leader>F :call RangeCSSBeautify()<cr>
+
+" Make ack.vim actually use ag
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
+
+" VimShell bindings
+noremap <leader>s :VimShellPop<cr>

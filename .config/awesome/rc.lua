@@ -75,7 +75,7 @@ layouts =
 tags = {}
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
-    tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9 }, s, layouts[1])
+    tags[s] = awful.tag({"browser", "main", "vim", "vim", "vim", "irc", "media"}, s, layouts[1])
 end
 -- }}}
 
@@ -182,6 +182,10 @@ for s = 1, screen.count() do
     )                                                                               
     batterywidgettimer:start()
 
+    cpuwidget = widget({ type = "textbox" })
+    vicious.register(cpuwidget, vicious.widgets.cpu, "CPU $1%")
+
+    --
     -- Create the wibox
     mywibox[s] = awful.wibox({ position = "top", screen = s })
     -- Add widgets to the wibox - order matters
@@ -193,6 +197,7 @@ for s = 1, screen.count() do
             layout = awful.widget.layout.horizontal.leftright
         },
         mylayoutbox[s],
+        cpuwidget,
         batterywidget,
         mytextclock,
         s == 1 and mysystray or nil,
@@ -390,7 +395,7 @@ end)
 client.add_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.add_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 
-os.execute("nm-applet&")
-
+awful.util.spawn_with_shell("run_once nm-applet")
 
 -- }}}
+
