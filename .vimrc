@@ -121,10 +121,10 @@ set cindent
 "set noexpandtab shiftwidth=4 tabstop=4
 
 " Insert 4 spaces when tab is pressed. (Telogical)
-set expandtab shiftwidth=4 tabstop=4
+"set expandtab shiftwidth=4 tabstop=4
 
 " Insert 4 spaces when tab is pressed. (Node/NPM)
-"set expandtab shiftwidth=2 tabstop=2
+set expandtab shiftwidth=2 tabstop=2
 
 set fillchars=stl:-,stlnc:-,vert:│
 
@@ -153,8 +153,7 @@ augroup END
 " Set color scheme
 " colorscheme lucius
 colorscheme lucius
-:map <leader>b :hi Normal ctermbg=None<CR>
-:map <leader>bb :colorscheme lucius<CR>
+LuciusBlackHighContrast
 
 " Syntastic settings
 " let g:syntastic_json_checkers = ['jsonlint']
