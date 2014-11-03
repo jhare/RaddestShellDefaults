@@ -51,6 +51,7 @@ NeoBundle 'rking/ag.vim'
 NeoBundle 'maksimr/vim-jsbeautify'
 NeoBundle 'wavded/vim-stylus'
 NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'XadillaX/json-formatter.vim'
 
 " Required:
 call neobundle#end()
@@ -112,7 +113,7 @@ syntax on
 filetype plugin indent on
 
 " Wrapping and display lines
-set textwidth=80
+" set textwidth=80
 set colorcolumn=80
 
 set cindent
@@ -288,3 +289,11 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " VimShell bindings
 noremap <leader>s :VimShellPop<cr>
+
+
+" NERDCommenter change
+noremap <leader>c :NERDComToggleComment<cr>
+
+" Stop fucking clobbering my buffer motherfuckers
+noremap y "0y
+noremap p "0p
