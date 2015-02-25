@@ -36,6 +36,7 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-sensible'
 NeoBundle 'tpope/vim-cucumber'
+NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'jonathanfilip/vim-lucius'
 NeoBundle 'joonty/vdebug'
 NeoBundle 'scrooloose/nerdtree'
@@ -127,17 +128,14 @@ set cindent
 " Insert 4 spaces when tab is pressed. (Node/NPM)
 set expandtab shiftwidth=2 tabstop=2
 
+set splitright
+set splitbelow
+
 set fillchars=stl:-,stlnc:-,vert:│
 
 " Map NERDTree to Ctrl+n
 map <leader>n :NERDTreeToggle<CR>
 map <leader>m :NERDTreeMirror<CR>
-
-" Set up folding
-augroup vimrc
-  au BufReadPre * setlocal foldmethod=indent
-  au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
-augroup END
 
 " Quick access to buffer search
 :map <leader>, :buffer<Space>
@@ -158,6 +156,14 @@ LuciusBlackHighContrast
 
 " Syntastic settings
 " let g:syntastic_json_checkers = ['jsonlint']
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " Find .jshintrc for Syntastic
 function s:find_jshintrc(dir)
@@ -177,7 +183,7 @@ endfunction
 function UpdateJsHintConf()
     let l:dir = expand('%:p:h')
     let l:jshintrc = s:find_jshintrc(l:dir)
-    let g:syntastic_javascript_jshint_conf = l:jshintrc
+    let g:syntastic_javascript_jshint_args = '--config ' + l:jshintrc
 endfunction
 
 au BufEnter * call UpdateJsHintConf()
@@ -294,6 +300,6 @@ noremap <leader>s :VimShellPop<cr>
 " NERDCommenter change
 noremap <leader>c :NERDComToggleComment<cr>
 
-" Stop fucking clobbering my buffer motherfuckers
-noremap y "0y
-noremap p "0p
+" Insert newlines like a baus
+nmap <S-Enter> O<Esc>
+nmap <CR> o<Esc>
