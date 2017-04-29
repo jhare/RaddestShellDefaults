@@ -1,2 +1,0 @@
-#!/bin/sh
-sed 's/\t/","/g;s/^/"/;s/$/"/;s/\n//g;s/NULL//g' 
