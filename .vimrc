@@ -1,16 +1,15 @@
 " Set up NeoBundle as well
-" source /home/jhare/.vim/vimrcs/neobundle-setup.vim
-
+" source ~/.vim/vimrcs/neobundle-setup.vim
 "NeoBundle Scripts-----------------------------
 if has('vim_starting')
   set nocompatible               " Be iMproved
 
   " Required:
-  set runtimepath+=/home/jhare/.vim/bundle/neobundle.vim/
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
 " Required:
-call neobundle#begin(expand('/home/jhare/.vim/bundle'))
+call neobundle#begin(expand('~/.vim/bundle'))
 
 " Let NeoBundle manage NeoBundle
 " Required:
@@ -89,14 +88,16 @@ set noerrorbells
 set modeline
 set ls=2
 
-" Turn off line wrapping
-set nowrap
 
 " Enable syntax
 syntax on 
 
-" Wrapping and display lines
-" set textwidth=80
+" Wrapping on insert (actually changing the file)
+set textwidth=80
+
+" Show that ugly gutter at char 80 so we know where we're at
+" TODO: Can we show 74 in a lighter diff color, like a thinner line too?
+" Something in UTF that doesn't suck?
 set colorcolumn=80
 
 set cindent
